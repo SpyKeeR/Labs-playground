@@ -1,0 +1,14 @@
+# IP Info #
+- Subnets are 192.168.XX.0/24 (R1-R2 segment is 192.168.12.0/24, R1-R3 segment is 192.168.13.0/24, etc.)
+- IP addresses are .X (R1 IPs are .1, R2 IPs are .2, etc.)
+
+# Lab Instructions #
+1) In the list of processes running on R1's CPU, identify the process responsible for process switching packets.
+2) Examine the RIB of R1.
+3) Examine the FIB of R1 and compare it to the contents of the RIB.
+- What entries are present in the FIB but not the RIB?
+4) Examine the ARP table of R1.
+5) Examine the Adjacency table of R1 and compare to the contents of the ARP table.
+- Is neighbor resolution optimization enabled? What effect does this have on CEF?
+6) Configure R1's interface to perform CEF load-balancing on a per-packet basis.
+7) What is the default CEF load-balancing algorithm? What other options are there?

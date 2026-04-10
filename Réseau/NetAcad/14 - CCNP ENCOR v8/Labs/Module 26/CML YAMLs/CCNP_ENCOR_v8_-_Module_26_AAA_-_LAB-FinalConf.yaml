@@ -1,0 +1,607 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 6285 bytes\n\
+          !\n! Last configuration change at 15:50:05 UTC Tue Mar 24 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\nservice call-home\nplatform qfp utilization monitor load 80\nplatform\
+          \ punt-keepalive disable-kernel-core\nplatform console serial\n!\nhostname\
+          \ R1\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging console\n\
+          enable secret 9 $9$qesymwqW5ZPhGU$SxRa99ClAyLerlGhZN8q0P4Bg7q4xXoZE3nDQ29dE/6\n\
+          !\naaa new-model\n!\n!\naaa authentication login default enable\naaa authentication\
+          \ login VTY-AUTH local\naaa authentication login RAD-AUTH group radius local\n\
+          !\n!\n!\n!\n!\n!\naaa session-id common\n!\n!\n!\n!\n!\n!\n!\nno ip domain\
+          \ lookup\nip dhcp excluded-address 192.168.1.1 192.168.1.5\n!\nip dhcp pool\
+          \ HOST_ADRESSING\n network 192.168.1.0 255.255.255.0\n default-router 192.168.1.1\n\
+          !\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n\
+          !\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n enrollment\
+          \ pkcs12\n revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-1861770970\n\
+          \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-1861770970\n\
+          \ revocation-check none\n rsakeypair TP-self-signed-1861770970\n!\n!\ncrypto\
+          \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+          \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+          \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+          \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+          \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+          \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+          \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+          \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+          \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+          \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+          \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+          \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+          \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+          \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+          \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+          \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+          \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+          \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+          \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+          \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+          \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+          \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+          \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+          \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+          \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+          \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n\
+          \  \tquit\ncrypto pki certificate chain TP-self-signed-1861770970\n certificate\
+          \ self-signed 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886\
+          \ F70D0101 05050030\n  31312F30 2D060355 04031326 494F532D 53656C66 2D536967\
+          \ 6E65642D 43657274\n  69666963 6174652D 31383631 37373039 3730301E 170D3236\
+          \ 30333234 31343432\n  33345A17 0D333630 33323331 34343233 345A3031 312F302D\
+          \ 06035504 03132649\n  4F532D53 656C662D 5369676E 65642D43 65727469 66696361\
+          \ 74652D31 38363137\n  37303937 30308201 22300D06 092A8648 86F70D01 01010500\
+          \ 0382010F 00308201\n  0A028201 0100C234 ECA79B1D 8F2B4FA6 2D371322 3C97B5BC\
+          \ 39A5ACE8 F0937487\n  BE56B54D 230710BD 986401E1 9C843622 29DF7E5D ABD9AE4D\
+          \ 6692E4BB AB1C1A35\n  E629D796 38D97A8E 130CF85A 86E5D5A6 50815077 3AF6AFFA\
+          \ 2C123F72 C2014EDC\n  09C2D1C1 D78040F4 5E045F72 3CA0936A 117C07FF A72022E9\
+          \ B169A240 61BED08D\n  BD3D6C6E B87428C5 23610B2B E71E68C1 1BEE7109 FBC024C0\
+          \ E420C7D8 5B4C5A47\n  6C19136C B45B3A19 241E0332 EA66CE91 D13D33ED 97391CB0\
+          \ B558B142 54B5629C\n  0F0B8A1F 93CF360B 12D5194A 57C543AE 63BC05F1 260A1D58\
+          \ BA4DED77 8E8393FD\n  870BBCBB EF16F8AB 26F18082 A78775D1 0A4CD396 C6C2E92E\
+          \ B2A3C7A0 7B479EFC\n  199369AF B95D0203 010001A3 53305130 0F060355 1D130101\
+          \ FF040530 030101FF\n  301F0603 551D2304 18301680 146AB61D 448EFFC1 D36CAE46\
+          \ 1D1D8216 E1C8F145\n  6A301D06 03551D0E 04160414 6AB61D44 8EFFC1D3 6CAE461D\
+          \ 1D8216E1 C8F1456A\n  300D0609 2A864886 F70D0101 05050003 82010100 A1A0BC69\
+          \ D9D20BCE ADB4DB92\n  BBDA4679 7799337A 2FD70394 10E29142 E142444E E5621EB9\
+          \ 3A54D503 533AB26F\n  02DBED7C E690EB48 F68424C3 0D499FA8 7243EBFC 12A50F6E\
+          \ EF97DED2 DB7CEFFB\n  DFB1D6A9 846EE3C0 0DABC6E5 36ED1BEA 6A41D524 7CB9CAE8\
+          \ 7EC40A39 159C4B4D\n  FFAB47B6 49D17883 0121CF72 2F78F2A8 C57903A3 4971C9AD\
+          \ E72A09A4 6B44CDE0\n  2010520C 104172FB 27568D87 F5CBCA56 6A86F525 3C26AD05\
+          \ C82E5237 0BAF2BC3\n  86D3E317 E03B4B44 7585511B DE843588 4269A95E E559554D\
+          \ 8C58F884 465EDB3B\n  C761B6FB DD4E66C9 9A80D51E 62F3D032 DEAEB61A 40E39681\
+          \ F9C4DA85 77A7D2BC\n  90C653C6 876D2C1A AB79B64D 7561236E CB35F51C\n  \t\
+          quit\n!\nlicense udi pid CSR1000V sn 9X8673N790O\ndiagnostic bootup level\
+          \ minimal\nmemory free low-watermark processor 71464\n!\n!\nspanning-tree\
+          \ extend system-id\n!\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n ip\
+          \ address 192.168.1.1 255.255.255.0\n negotiation auto\n no mop enabled\n\
+          \ no mop sysid\n!\nip forward-protocol nd\nno ip http server\nip http secure-server\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\nradius server RADIUS\n address ipv4 192.168.1.5\
+          \ auth-port 1812 acct-port 1813\n key $trongPass\n!\n!\ncontrol-plane\n\
+          !\n!\n!\n!\n!\nbanner motd ^C R1, Configure AAA-Based Authentication ^C\n\
+          !\nline con 0\n exec-timeout 0 0\n logging synchronous\n stopbits 1\nline\
+          \ vty 0 4\n exec-timeout 0 0\n login authentication RAD-AUTH\n transport\
+          \ input telnet\n!\ncall-home\n ! If contact email address in call-home is\
+          \ configured as sch-smart-licensing@cisco.com\n ! the email address configured\
+          \ in Cisco Smart License Portal will be used as contact email address to\
+          \ send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+          \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n\
+          !\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: -120
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 4179 bytes
+          !
+          ! Last configuration change at 15:50:09 UTC Tue Mar 24 2026 by tacadmin
+          !
+          version 15.2
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          no service password-encryption
+          service compress-config
+          !
+          hostname D1
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          enable secret 9 $9$4usQlHS8p4eyLv$meIvE9A3cbpFibc3N/ESL/le8ZF.1jTIwX18IACg2bs
+          !
+          username localuser secret 9 $9$vUR5ekhqSyLvBf$E00yGdTBWXXGr5i.RsjO/MGNdqiQmX6YHxMwCatD4Hk
+          aaa new-model
+          !
+          !
+          aaa group server tacacs+ TACACS-GP
+           server name TACACS
+          !
+          aaa authentication login default group TACACS-GP local
+          aaa authorization console
+          aaa authorization config-commands
+          aaa authorization commands 0 default group TACACS-GP none
+          aaa authorization commands 1 default group TACACS-GP none
+          aaa authorization commands 15 default group TACACS-GP none
+          aaa accounting exec default start-stop group TACACS-GP
+          aaa accounting commands 15 default start-stop group TACACS-GP
+          !
+          !
+          !
+          !
+          !
+          !
+          aaa session-id common
+          no process cpu extended history
+          no process cpu autoprofile hog
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          no ip domain-lookup
+          ip cef
+          no ipv6 cef
+          !
+          !
+          !
+          spanning-tree mode pvst
+          spanning-tree extend system-id
+          !
+          no cdp run
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface Port-channel1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+          !
+          interface GigabitEthernet0/0
+           switchport mode access
+           negotiation auto
+           no cdp enable
+           spanning-tree portfast edge
+          !
+          interface GigabitEthernet0/1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           negotiation auto
+           no cdp enable
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet0/2
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           negotiation auto
+           no cdp enable
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet0/3
+           switchport mode access
+           negotiation auto
+           no cdp enable
+           spanning-tree portfast edge
+          !
+          interface Vlan1
+           ip address 192.168.1.2 255.255.255.0
+          !
+          ip default-gateway 192.168.1.1
+          ip forward-protocol nd
+          !
+          ip http server
+          ip http secure-server
+          !
+          ip route 0.0.0.0 0.0.0.0 192.168.1.1
+          ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          !
+          !
+          no service-routing capabilities-manager
+          !
+          !
+          !
+          tacacs server TACACS
+           address ipv4 192.168.1.5
+           key $trongPass
+           single-connection
+          !
+          !
+          !
+          control-plane
+          !
+          banner exec ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner incoming ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner login ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner motd ^C Test Modif ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: D1
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: 40
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 3643 bytes
+          !
+          ! Last configuration change at 15:50:06 UTC Tue Mar 24 2026
+          !
+          version 15.2
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          no service password-encryption
+          service compress-config
+          !
+          hostname A1
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          enable secret 5 $1$YuQF$MOR108U5JdtkLmJoz8e.B.
+          !
+          username localuser secret 9 $9$l6AORi2n3WLohP$oLFqwaOGV/myBtKt8r1bUYXX0D.8sbToF3pLRZpwCAA
+          aaa new-model
+          !
+          !
+          aaa authentication login default enable
+          aaa authentication login VTY-AUTH local
+          aaa authentication login RAD-AUTH group radius local
+          !
+          !
+          !
+          !
+          !
+          !
+          aaa session-id common
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          no ip domain-lookup
+          ip cef
+          no ipv6 cef
+          !
+          !
+          !
+          spanning-tree mode pvst
+          spanning-tree extend system-id
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface Port-channel1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+          !
+          interface GigabitEthernet0/0
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           negotiation auto
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet0/1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           negotiation auto
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet0/2
+           switchport mode access
+           negotiation auto
+           spanning-tree portfast edge
+          !
+          interface Vlan1
+           ip address 192.168.1.3 255.255.255.0
+          !
+          ip default-gateway 192.168.1.1
+          ip forward-protocol nd
+          !
+          ip http server
+          ip http secure-server
+          !
+          ip route 0.0.0.0 0.0.0.0 192.168.1.1
+          ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          radius server RADIUS
+           address ipv4 192.168.1.5 auth-port 1812 acct-port 1813
+           key $trongPass
+          !
+          !
+          control-plane
+          !
+          banner exec ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner incoming ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner login ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner motd ^C A1, Configure AAA-Based Authentication ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           login authentication RAD-AUTH
+          line vty 5 15
+           login authentication RAD-AUTH
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: A1
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: 200
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: PC1
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: -40
+    y: 120
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration:
+      - name: default
+        content: System Bridge
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: VMnet 15
+    node_definition: external_connector
+    parameters: {}
+    ram: null
+    tags: []
+    x: 200
+    y: 120
+    interfaces:
+      - id: i0
+        label: port
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n0
+    n2: n1
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: R1-GigabitEthernet1<->D1-GigabitEthernet0/0
+  - id: l1
+    n1: n1
+    n2: n2
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: D1-GigabitEthernet0/1<->A1-GigabitEthernet0/0
+  - id: l2
+    n1: n1
+    n2: n2
+    i1: i3
+    i2: i2
+    conditioning: {}
+    label: D1-GigabitEthernet0/2<->A1-GigabitEthernet0/1
+  - id: l3
+    n1: n1
+    n2: n3
+    i1: i4
+    i2: i0
+    conditioning: {}
+    label: D1-GigabitEthernet0/3<->PC1-eth0
+  - id: l4
+    n1: n2
+    n2: n4
+    i1: i3
+    i2: i0
+    conditioning: {}
+    label: A1-GigabitEthernet0/2<->ext-conn-0-port
+lab:
+  description: Lab - Configure Local and Server-Based AAA Authentication
+  notes: ''
+  title: CCNP ENCOR v8 - Module 26 AAA - LAB
+  version: 0.3.0

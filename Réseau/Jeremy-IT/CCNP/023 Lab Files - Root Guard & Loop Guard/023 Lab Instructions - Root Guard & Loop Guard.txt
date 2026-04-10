@@ -1,0 +1,11 @@
+# Lab Instructions #
+1) Verify the STP topology and enable STP event debugging on all switches.
+2) Lower the CustomerSwitch's STP priority to make it the Root Bridge.
+3) Enable Root Guard where appropriate.
+- Verify that Root Guard works.
+- Fix the problem. What happens after?
+4) Use BPDU Filter to cause a Layer 2 loop in the LAN.
+- Disable BPDU Filter to stop the loop.
+5) Enable Loop Guard where appropriate.
+- Verify that Loop Guard works by enabling BPDU Filter again.
+- Disable BPDU Filter again. What happens after?

@@ -1,0 +1,9 @@
+# Lab Instructions #
+1) Configure each port on SW1 and SW2 in their proper VLANs.
+ - Allow only the necessary VLANs on each trunk, and create only the necessary VLANs on each switch.
+2) Configure R1 to perform inter-VLAN routing via ROAS. Use the first usable IP address of each subnet as the router IP address.
+3) Remove the ROAS configuration on R1 and use SVIs on SW1 for inter-VLAN routing instead.
+4) Configure the SW1-R1 link as 203.0.113.0/30 (routed port on SW1), and configure a default route on SW1 pointing to R1.
+ - Which VLAN is assigned as an internal VLAN for SW1's routed port?
+5) Configure PAT on R1 to allow PCs to reach the Internet.
+ - The 'Internet' is CML's External Connector. Depending on your network setup, it might not work. In that case, use a separate router to simulate the Internet.

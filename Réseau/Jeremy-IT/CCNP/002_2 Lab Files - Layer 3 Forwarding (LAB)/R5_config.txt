@@ -1,0 +1,101 @@
+
+!
+!
+!
+!
+interface Loopback0
+ ip address 203.0.113.113 255.255.255.255
+!
+interface Loopback1
+ ip address 8.8.8.8 255.255.255.255
+!
+interface Loopback2
+ ip address 172.20.20.27 255.255.255.255
+!
+interface Loopback3
+ ip address 198.0.27.56 255.255.255.255
+!
+interface Loopback4
+ ip address 192.168.255.238 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 192.168.5.5 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/1
+ ip address 192.168.25.5 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ ip address 192.168.35.5 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ ip address 192.168.45.5 255.255.255.0
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+ip route 192.168.1.0 255.255.255.0 192.168.25.2
+ip route 192.168.1.0 255.255.255.0 192.168.35.3
+ip route 192.168.1.0 255.255.255.0 192.168.45.4
+ip route 192.168.12.0 255.255.255.0 192.168.25.2
+ip route 192.168.13.0 255.255.255.0 192.168.35.3
+ip route 192.168.14.0 255.255.255.0 192.168.45.4
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+banner exec ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner incoming ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+banner login ^C
+**************************************************************************
+* IOSv is strictly limited to use for evaluation, demonstration and IOS  *
+* education. IOSv is provided as-is and is not supported by Cisco's      *
+* Technical Advisory Center. Any use or disclosure, in whole or in part, *
+* of the IOSv Software or Documentation to any third party for any       *
+* purposes is expressly prohibited except as otherwise authorized by     *
+* Cisco in writing.                                                      *
+**************************************************************************^C
+!
+line con 0
+ exec-timeout 0 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end

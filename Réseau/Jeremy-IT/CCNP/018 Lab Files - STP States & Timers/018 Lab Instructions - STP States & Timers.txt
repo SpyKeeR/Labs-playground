@@ -1,0 +1,9 @@
+# Lab Instructions #
+- Determine the STP topology and then proceed with the following steps. Use 'debug spanning-tree event'.
+1) Disable and re-enable SW5 G0/1. Which STP state(s) does it move through? How long does it take? Which state is it stable in?
+2) Disable and re-enable SW4 G0/1. Which STP state(s) does it move through? How long does it take? Which state is it stable in?
+3) Disable SW4 G0/0. What happens immediately after? How long does it take for STP to re-converge?
+- Re-enable SW4 G0/0 after. What happens immediately after? How long does it take for STP to re-converge?
+4) Disable and re-enable SW3 G0/1. How long does it take to reach the forwarding state?
+5) What is the age of BPDUs at each point in the LAN? Confirm with a packet capture.
+6) Change the Hello, Forward Delay, and Max Age timers of the root bridge, and confirm that other switches are using the new timers.

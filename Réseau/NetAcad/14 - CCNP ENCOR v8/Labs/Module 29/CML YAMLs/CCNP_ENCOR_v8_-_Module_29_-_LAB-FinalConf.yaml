@@ -1,0 +1,253 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: Switch
+    node_definition: unmanaged_switch
+    parameters: {}
+    ram: null
+    tags: []
+    x: -120
+    y: -120
+    interfaces:
+      - id: i0
+        label: port0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i1
+        label: port1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i2
+        label: port2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i3
+        label: port3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i4
+        label: port4
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i5
+        label: port5
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i6
+        label: port6
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i7
+        label: port7
+        mac_address: null
+        type: physical
+        slot: 7
+  - boot_disk_size: null
+    configuration:
+      - name: default
+        content: System Bridge
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: VMnet 15
+    node_definition: external_connector
+    parameters: {}
+    ram: null
+    tags: []
+    x: -280
+    y: -120
+    interfaces:
+      - id: i0
+        label: port
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 7800 bytes\n\
+          !\n! Last configuration change at 16:46:03 UTC Wed Mar 25 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\nservice call-home\nplatform qfp utilization monitor load 80\nplatform\
+          \ punt-keepalive disable-kernel-core\nplatform console serial\n!\nhostname\
+          \ R1\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging console\n\
+          !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain\
+          \ name example.netacad.com\nip dhcp excluded-address 192.168.1.1 192.168.1.10\n\
+          !\nip dhcp pool LAN\n network 192.168.1.0 255.255.255.0\n default-router\
+          \ 192.168.1.1\n domain-name example.netacad.com\n!\n!\n!\nlogin on-success\
+          \ log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n!\n!\n!\n!\nmultilink\
+          \ bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check\
+          \ crl\n!\ncrypto pki trustpoint TP-self-signed-3360072882\n enrollment selfsigned\n\
+          \ subject-name cn=IOS-Self-Signed-Certificate-3360072882\n revocation-check\
+          \ none\n rsakeypair TP-self-signed-3360072882\n!\n!\ncrypto pki certificate\
+          \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201\
+          \ 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305\
+          \ 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720\
+          \ 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330\
+          \ 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355\
+          \ 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230\
+          \ 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96\
+          \ 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7\
+          \ 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715\
+          \ B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18\
+          \ FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5\
+          \ DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7\
+          \ AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D\
+          \ C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327\
+          \ A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100\
+          \ 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04\
+          \ 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333\
+          \ 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66\
+          \ 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E\
+          \ CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2\
+          \ 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D\
+          \ CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7\
+          \ B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E\
+          \ 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9\
+          \ 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75\
+          \ 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n\
+          crypto pki certificate chain TP-self-signed-3360072882\n certificate self-signed\
+          \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+          \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+          \  69666963 6174652D 33333630 30373238 3832301E 170D3236 30333235 31363033\n\
+          \  33385A17 0D333630 33323431 36303333 385A3031 312F302D 06035504 03132649\n\
+          \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 33363030\n\
+          \  37323838 32308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+          \  0A028201 0100A4E3 28F9EFA2 E849BFC3 011A04E3 F68E959A FACCB499 5E4E86AF\n\
+          \  B6326957 B5F8ED49 106C3BDD 5FEE4AB0 EF221644 28F4B358 7465AED8 B4A46548\n\
+          \  D2515835 DA83FA27 9D4F14E2 984DF98F 1EC62785 0A58D0C8 FD5FFE75 83BEDB27\n\
+          \  00086D80 277BAB9B C6F9F10F 96E98FF4 FC2FDF1C D1DCD109 C2499E98 6C940BF8\n\
+          \  CE215619 A402F4DD 931AE8F7 983884D3 CFEB8700 1420E3E4 1567004C DCE7F3A1\n\
+          \  B4A17A3E 5B4DC7D6 A7402FF8 CDD0C7C2 38610888 F364557E 17C6EA4A E21A06C2\n\
+          \  9FAB6125 F490C860 FEE792B7 DCFC1A00 F4EC9E6F E8912D9C 4A10E8A0 48543EBB\n\
+          \  16055086 50E3F129 BC6E9941 95309187 A5509D11 7A625470 27F9D09D E3B0E264\n\
+          \  3F1E07E8 71F30203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+          \  301F0603 551D2304 18301680 1446181B D1972748 203E7144 C7FC1799 E3609A20\n\
+          \  1C301D06 03551D0E 04160414 46181BD1 97274820 3E7144C7 FC1799E3 609A201C\n\
+          \  300D0609 2A864886 F70D0101 05050003 82010100 995B6D81 D939AB42 BAC21F36\n\
+          \  936CA1A6 18898B27 66CA32AB 617AD827 A7D79078 137187E5 B708C680 327E896B\n\
+          \  88183493 D3EF94AE CC3037A3 F6C253A9 E6AA43F8 A786E413 1F0BBBD1 09236C22\n\
+          \  6CE882EB 16C04F0C 203302BC 0F125F6A F49F4F01 6111B031 648D664A 8C70DD72\n\
+          \  751A8D10 949E0BE9 2C37FA51 44F33BEE D1292617 FEC67DEE 66912BDA FF2F8A52\n\
+          \  C58F93C9 641B34C5 4128D061 01E43104 B1D4FA65 F10D3B01 47E3FB35 76EA12EF\n\
+          \  7F97892E EABC812D 671EEF8D 41CD12B4 85454B83 FB8461BF 941D7E6F C9A0361A\n\
+          \  E38AC1B2 754A7F87 F9D31D2C C3FFD972 1B575521 F4337D19 61E579B4 81148C16\n\
+          \  B56A2DAD 2B262E07 8CAE0559 31BDB9A2 70758B2F\n  \tquit\n!\nlicense udi\
+          \ pid CSR1000V sn 9NNE963SNXS\ndiagnostic bootup level minimal\nmemory free\
+          \ low-watermark processor 71464\n!\n!\nspanning-tree extend system-id\n\
+          !\nusername cisco privilege 15 password 0 cisco123!\n!\nredundancy\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          interface Loopback1\n description Primary Interface\n ip address 192.168.10.1\
+          \ 255.255.255.0\n shutdown\n!\ninterface Loopback2\n description Backup\
+          \ Interface\n ip address 192.168.20.1 255.255.255.0\n!\ninterface GigabitEthernet1\n\
+          \ description link to PC\n ip address 192.168.1.1 255.255.255.0\n negotiation\
+          \ auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet2\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\ninterface GigabitEthernet3\n no ip address\n shutdown\n negotiation\
+          \ auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet4\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\nip forward-protocol nd\nno ip http server\nip http secure-server\n\
+          !\n!\n!\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\n!\nline con 0\n exec-timeout\
+          \ 0 0\n logging synchronous\n stopbits 1\nline vty 0 4\n exec-timeout 0\
+          \ 0\n logging synchronous\n login local\n transport input ssh\nline vty\
+          \ 5 15\n exec-timeout 0 0\n logging synchronous\n login local\n transport\
+          \ input ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+          \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+          \ Smart License Portal will be used as contact email address to send SCH\
+          \ notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n profile\
+          \ \"CiscoTAC-1\"\n  active\n  destination transport-method http\n!\n!\n\
+          !\n!\nevent manager environment TFTP_SERVER tftp://192.168.1.11/\nevent\
+          \ manager environment filename R1_last_config.cfg\nevent manager applet\
+          \ BACKUP_INTERFACE\n event syslog pattern \"Line protocol on Interface Loopback1,\
+          \ changed state to down\"\n action 1.0 cli command \"enable\"\n action 1.5\
+          \ cli command \"configure terminal\"\n action 2.0 cli command \"interface\
+          \ loopback1\"\n action 2.5 cli command \"shutdown\"\n action 3.0 cli command\
+          \ \"interface loopback2\"\n action 3.5 cli command \"no shutdown\"\n action\
+          \ 4.0 cli command \"end\"\n action 5.0 mail server \"mailserver.example.com\"\
+          \ to \"net_admin@example.com\" from \"R1_EEM@example.com\" subject \"Primary\
+          \ Interface down.\" body \"Backup interface active $_cli_result\"\nevent\
+          \ manager applet LAST_CONFIG\n event cli pattern \"^cop.* ru.* st.*\" sync\
+          \ yes\n action 1.0 cli command \"enable\"\n action 2.0 cli command \"configure\
+          \ terminal\"\n action 3.0 cli command \"file prompt quiet\"\n action 4.0\
+          \ cli command \"end\"\n action 5.0 cli command \"copy start $TFTP_SERVER$filename\"\
+          \n action 5.5 cli command \"copy run start\"\n action 6.0 cli command \"\
+          configure terminal\"\n action 7.0 cli command \"no file prompt quiet\"\n\
+          \ action 8.0 syslog priority informational msg \"Configuration file backed\
+          \ up to TFTP.\"\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 80
+    y: -120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet4
+        mac_address: null
+        type: physical
+        slot: 3
+links:
+  - id: l0
+    n1: n2
+    n2: n0
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: R1-GigabitEthernet1<->Switch-port0
+  - id: l1
+    n1: n0
+    n2: n1
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: Switch-port1<->VMnet 15-port
+lab:
+  description: Lab - Construct an EEM Applet
+  notes: ''
+  title: CCNP ENCOR v8 - Module 29 - LAB
+  version: 0.3.0

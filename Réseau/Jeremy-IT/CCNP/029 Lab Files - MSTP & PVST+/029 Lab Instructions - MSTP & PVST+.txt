@@ -1,0 +1,25 @@
+# Lab Instructions #
+---
+-
+- **Step 1** - Examine the network.
+- What is the CIST topology?
+- Examine the BPDUs exchanged between the MSTP and Rapid-PVST+ switches. What protocol version identifier is specified?
+-
+---
+-
+- **Step 2** - Without changing the CIST Root, trigger a PVST simulation inconsistency error.
+- Fix the error. How long does it take for the topology to recover?
+-
+---
+-
+- **Step 3** - Make SW5 the CIST Root by modifying only its VLAN 1 priority.
+- Why is a PVST simulation inconsistency error triggered?
+- Fix the error.
+-
+---
+-
+- **Step 4** - Remove VLAN 1 from the SW2-SW5 and SW4-SW6 trunks.
+- Why is a PVST simulation inconsistency error triggered?
+- Fix the error.
+-
+---

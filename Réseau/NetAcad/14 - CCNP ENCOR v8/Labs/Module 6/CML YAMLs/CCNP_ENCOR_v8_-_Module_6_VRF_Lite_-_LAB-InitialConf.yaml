@@ -1,0 +1,796 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 4088 bytes\n\
+          !\n! Last configuration change at 21:13:37 UTC Sat Mar 14 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\n! Call-home is enabled by Smart-Licensing.\nservice call-home\n\
+          platform qfp utilization monitor load 80\nplatform punt-keepalive disable-kernel-core\n\
+          platform console serial\n!\nhostname R2\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\n!\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip\
+          \ domain lookup\n!\n!\n!\nlogin on-success log\nipv6 unicast-routing\n!\n\
+          !\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name\
+          \ authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki\
+          \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n\
+          !\n!\ncrypto pki certificate chain SLA-TrustPoint\n certificate ca 01\n\
+          \  30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n\
+          \  32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363\n\
+          \  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n\
+          \  3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n\
+          \  43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n\
+          \  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n\
+          \  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n\
+          \  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n\
+          \  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n\
+          \  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n\
+          \  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n\
+          \  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n\
+          \  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n\
+          \  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n\
+          \  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n\
+          \  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n\
+          \  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n\
+          \  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n\
+          \  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n\
+          \  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n\
+          \  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n\
+          \  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n\
+          \  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n\
+          \  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n\
+          \  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n\
+          \  D697DF7F 28\n  \tquit\n!\nlicense udi pid CSR1000V sn 9WUSREYZDH1\ndiagnostic\
+          \ bootup level minimal\nmemory free low-watermark processor 71464\n!\n!\n\
+          spanning-tree extend system-id\n!\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n\
+          \ ip address 192.168.2.1 255.255.255.0\n ipv6 address FE80::2:2 link-local\n\
+          \ ipv6 address 2001:DB8:ACAD:2000::1/64\n!\ninterface GigabitEthernet1\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\ninterface GigabitEthernet2\n ip address 10.1.2.2 255.255.255.0\n\
+          \ negotiation auto\n ipv6 address FE80::2:1 link-local\n ipv6 address 2001:DB8:ACAD:1012::2/64\n\
+          \ no mop enabled\n no mop sysid\n!\nip forward-protocol nd\nno ip http server\n\
+          ip http secure-server\n!\nip route 0.0.0.0 0.0.0.0 GigabitEthernet2 10.1.2.1\n\
+          !\n!\nipv6 route ::/0 GigabitEthernet2 2001:DB8:ACAD:1012::1\n!\n!\n!\n\
+          !\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C R2, Implement VRF-Lite\
+          \ ^C\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\n stopbits\
+          \ 1\nline vty 0 4\n exec-timeout 0 0\n privilege level 15\n password cisco123\n\
+          \ logging synchronous\n login\n transport input ssh\n!\ncall-home\n ! If\
+          \ contact email address in call-home is configured as sch-smart-licensing@cisco.com\n\
+          \ ! the email address configured in Cisco Smart License Portal will be used\
+          \ as contact email address to send SCH notifications.\n contact-email-addr\
+          \ sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n  active\n  destination\
+          \ transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: R2
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: -172
+    y: -107
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 4271 bytes\n\
+          !\n! Last configuration change at 21:13:37 UTC Sat Mar 14 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\n! Call-home is enabled by Smart-Licensing.\nservice call-home\n\
+          platform qfp utilization monitor load 80\nplatform punt-keepalive disable-kernel-core\n\
+          platform console serial\n!\nhostname R3\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\n!\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip\
+          \ domain lookup\n!\n!\n!\nlogin on-success log\nipv6 unicast-routing\n!\n\
+          !\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name\
+          \ authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki\
+          \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n\
+          !\n!\ncrypto pki certificate chain SLA-TrustPoint\n certificate ca 01\n\
+          \  30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n\
+          \  32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363\n\
+          \  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n\
+          \  3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n\
+          \  43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n\
+          \  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n\
+          \  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n\
+          \  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n\
+          \  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n\
+          \  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n\
+          \  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n\
+          \  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n\
+          \  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n\
+          \  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n\
+          \  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n\
+          \  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n\
+          \  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n\
+          \  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n\
+          \  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n\
+          \  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n\
+          \  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n\
+          \  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n\
+          \  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n\
+          \  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n\
+          \  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n\
+          \  D697DF7F 28\n  \tquit\n!\nlicense udi pid CSR1000V sn 9Z6RFTR6F2Q\ndiagnostic\
+          \ bootup level minimal\nmemory free low-watermark processor 71464\n!\n!\n\
+          spanning-tree extend system-id\n!\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n\
+          \ ip address 192.168.3.1 255.255.255.0\n ipv6 address FE80::3:2 link-local\n\
+          \ ipv6 address 2001:DB8:ACAD:3000::1/64\n!\ninterface GigabitEthernet1\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\ninterface GigabitEthernet2\n no ip address\n shutdown\n negotiation\
+          \ auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet3\n\
+          \ ip address 10.1.3.2 255.255.255.0\n negotiation auto\n ipv6 address FE80::3:1\
+          \ link-local\n ipv6 address 2001:DB8:ACAD:1013::2/64\n no mop enabled\n\
+          \ no mop sysid\n!\ninterface GigabitEthernet4\n no ip address\n shutdown\n\
+          \ negotiation auto\n no mop enabled\n no mop sysid\n!\nip forward-protocol\
+          \ nd\nno ip http server\nip http secure-server\n!\nip route 0.0.0.0 0.0.0.0\
+          \ GigabitEthernet3 10.1.3.1\n!\n!\nipv6 route ::/0 GigabitEthernet3 2001:DB8:ACAD:1013::1\n\
+          !\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C R3, Implement\
+          \ VRF-Lite ^C\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\n\
+          \ stopbits 1\nline vty 0 4\n exec-timeout 0 0\n privilege level 15\n password\
+          \ cisco123\n login\n transport input ssh\n!\ncall-home\n ! If contact email\
+          \ address in call-home is configured as sch-smart-licensing@cisco.com\n\
+          \ ! the email address configured in Cisco Smart License Portal will be used\
+          \ as contact email address to send SCH notifications.\n contact-email-addr\
+          \ sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n  active\n  destination\
+          \ transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: R3
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 172
+    y: -109
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet4
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 3845 bytes\n\
+          !\n! Last configuration change at 21:13:37 UTC Sat Mar 14 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\n! Call-home is enabled by Smart-Licensing.\nservice call-home\n\
+          platform qfp utilization monitor load 80\nplatform punt-keepalive disable-kernel-core\n\
+          platform console serial\n!\nhostname R1\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\n!\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip\
+          \ domain lookup\n!\n!\n!\nlogin on-success log\nipv6 unicast-routing\n!\n\
+          !\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name\
+          \ authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki\
+          \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n\
+          !\n!\ncrypto pki certificate chain SLA-TrustPoint\n certificate ca 01\n\
+          \  30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n\
+          \  32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363\n\
+          \  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n\
+          \  3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n\
+          \  43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n\
+          \  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n\
+          \  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n\
+          \  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n\
+          \  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n\
+          \  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n\
+          \  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n\
+          \  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n\
+          \  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n\
+          \  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n\
+          \  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n\
+          \  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n\
+          \  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n\
+          \  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n\
+          \  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n\
+          \  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n\
+          \  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n\
+          \  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n\
+          \  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n\
+          \  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n\
+          \  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n\
+          \  D697DF7F 28\n  \tquit\n!\nlicense udi pid CSR1000V sn 9H30RV9MXSJ\ndiagnostic\
+          \ bootup level minimal\nmemory free low-watermark processor 71464\n!\n!\n\
+          spanning-tree extend system-id\n!\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\ninterface GigabitEthernet2\n no ip address\n shutdown\n negotiation\
+          \ auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet3\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\nip forward-protocol nd\nno ip http server\nip http secure-server\n\
+          !\n!\n!\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C R1,\
+          \ Implement VRF-Lite ^C\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\n\
+          \ stopbits 1\nline vty 0 4\n exec-timeout 0 0\n privilege level 15\n password\
+          \ cisco123\n login\n transport input ssh\n!\ncall-home\n ! If contact email\
+          \ address in call-home is configured as sch-smart-licensing@cisco.com\n\
+          \ ! the email address configured in Cisco Smart License Portal will be used\
+          \ as contact email address to send SCH notifications.\n contact-email-addr\
+          \ sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n  active\n  destination\
+          \ transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 0
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 2952 bytes
+          !
+          ! Last configuration change at 21:13:38 UTC Sat Mar 14 2026
+          !
+          version 15.2
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          no service password-encryption
+          service compress-config
+          !
+          hostname A1
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          !
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          no ip domain-lookup
+          ip cef
+          no ipv6 cef
+          !
+          !
+          !
+          spanning-tree mode pvst
+          spanning-tree extend system-id
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface GigabitEthernet0/0
+           switchport access vlan 5
+           switchport mode access
+           negotiation auto
+          !
+          interface GigabitEthernet0/1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           switchport nonegotiate
+           negotiation auto
+          !
+          interface GigabitEthernet0/2
+           switchport access vlan 8
+           switchport mode access
+           negotiation auto
+          !
+          ip forward-protocol nd
+          !
+          ip http server
+          ip http secure-server
+          !
+          ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          !
+          !
+          !
+          !
+          !
+          !
+          control-plane
+          !
+          banner exec ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner incoming ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner login ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner motd ^C A1, Implement VRF-Lite ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           privilege level 15
+           password cisco123
+           logging synchronous
+           login
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: A1
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: 1
+    y: 100
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 1486 bytes
+          !
+          ! Last configuration change at 21:13:36 UTC Sat Mar 14 2026
+          !
+          version 17.16
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          !
+          hostname D1
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          ip audit notify log
+          ip audit po max-events 100
+          no ip domain lookup
+          ip cef
+          login on-success log
+          ipv6 unicast-routing
+          ipv6 cef
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          memory free low-watermark processor 79497
+          !
+          !
+          spanning-tree mode rapid-pvst
+          spanning-tree extend system-id
+          !
+          !
+          vlan internal allocation policy ascending
+          !
+          !
+          !
+          !
+          !
+          interface Ethernet0/0
+           no switchport
+           ip address 10.1.2.2 255.255.255.0
+           ipv6 address FE80::D1:1 link-local
+           ipv6 address 2001:DB8:ACAD:1012::2/64
+          !
+          interface Ethernet0/1
+           switchport access vlan 11
+           switchport mode access
+          !
+          interface Ethernet0/2
+           shutdown
+          !
+          interface Ethernet0/3
+           shutdown
+          !
+          interface Vlan11
+           ip address 192.168.2.1 255.255.255.0
+           ipv6 address FE80::D1:2 link-local
+           ipv6 address 2001:DB8:ACAD:2000::1/64
+          !
+          ip forward-protocol nd
+          ip forward-protocol udp
+          !
+          !
+          ip http server
+          ip http secure-server
+          ip ssh bulk-mode 131072
+          ip route 0.0.0.0 0.0.0.0 Ethernet0/0 10.1.2.1
+          !
+          no logging btrace
+          ipv6 route ::/0 Ethernet0/0 2001:DB8:ACAD:1012::1
+          !
+          !
+          !
+          control-plane
+          !
+          !
+          banner motd ^C D1, Implement VRF-Lite ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           privilege level 15
+           password cisco123
+           logging synchronous
+           login
+           transport input ssh
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: D1
+    node_definition: ioll2-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: -172
+    y: 146
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 3695 bytes\n\
+          !\n! Last configuration change at 09:52:01 UTC Sun Mar 15 2026\n!\nversion\
+          \ 17.16\nservice timestamps debug datetime msec\nservice timestamps log\
+          \ datetime msec\n!\nhostname D2\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\nip audit notify log\nip audit po max-events 100\nno ip domain\
+          \ lookup\nip cef\nlogin on-success log\nipv6 unicast-routing\nipv6 cef\n\
+          !\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-131184656\n\
+          \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-131184656\n\
+          \ revocation-check none\n rsakeypair TP-self-signed-131184656\n hash sha512\n\
+          !\n!\ncrypto pki certificate chain TP-self-signed-131184656\n certificate\
+          \ self-signed 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886\
+          \ F70D0101 0D050030\n  30312E30 2C060355 04030C25 494F532D 53656C66 2D536967\
+          \ 6E65642D 43657274\n  69666963 6174652D 31333131 38343635 36301E17 0D323630\
+          \ 33313530 39353035\n  375A170D 33363033 31343039 35303537 5A303031 2E302C06\
+          \ 03550403 0C25494F\n  532D5365 6C662D53 69676E65 642D4365 72746966 69636174\
+          \ 652D3133 31313834\n  36353630 82012230 0D06092A 864886F7 0D010101 05000382\
+          \ 010F0030 82010A02\n  82010100 BEAD57E7 117989EB 964D72CF 6F861420 7E8D57FF\
+          \ E5D73507 511B4BCF\n  49740A88 FDEC2155 5CEBDC7D 3BB0393D 4FD09096 3E7236F6\
+          \ 6CAFD383 CCE5C0A4\n  A28FFA91 54F3E74D EA627FA4 E4B9124C 40430618 971A0618\
+          \ AED2B943 B2533890\n  C98CAF04 238C2FB0 EAE6D126 F50ABF14 AED5F1A8 76A51F35\
+          \ F248673F 86F46AF3\n  5BF261B4 9BDC3ED9 DA01BC1C DEC5010E E6235676 69EE3828\
+          \ 1BF2B0B5 F429CE0C\n  AEAE2BD0 D4C363FA 82C82F2E FC7FF634 0E95F43B 2AEEE3BD\
+          \ FC1FA825 FFA57EE9\n  7EF5DA0A C5C190C8 2BB3B5F7 46B78120 AF60CB40 7F09A7C5\
+          \ A2F819C8 08224A13\n  550DA0D6 CD408896 F74C8A37 073D44F9 1764A54E FF77BA75\
+          \ CA2E32F5 5A3BE2C8\n  273C995B 02030100 01A35330 51301D06 03551D0E 04160414\
+          \ 2EA26B33 414BA95B\n  118ED7B3 00C74551 C02B44ED 301F0603 551D2304 18301680\
+          \ 142EA26B 33414BA9\n  5B118ED7 B300C745 51C02B44 ED300F06 03551D13 0101FF04\
+          \ 05300301 01FF300D\n  06092A86 4886F70D 01010D05 00038201 01007B95 060E9479\
+          \ 16FDB3DB 7FFFA507\n  74358E01 66FF3224 E0619382 D6702A15 1B67F084 7AB10FD9\
+          \ C43A2F8D 312F052D\n  711F5BB1 BBBA4FD9 9AE9BAFF 8A364132 CE976C1F E8C67898\
+          \ C8E5DD4D 43CB563E\n  F883DA2B 7CB1A87D E1C9ECB4 AE29DC78 02BFA0F1 59A625F9\
+          \ D7CEC8B4 F1235D97\n  5B50BBE8 379E71BB CE84A2C3 5A4C9A6A 9F7FC8F4 E0AE4227\
+          \ 20E4BD7B 7F2DD7B6\n  F40F30A0 0D109D9A 38270E86 7E8815F9 36F2BF81 5558FD61\
+          \ 17CC9655 8DB422E1\n  BEE313BB 613CFDAB BA078F69 E14070F5 3CEFE8D4 1F1B2E8F\
+          \ B209C997 E4627BE4\n  33E064F9 855D8150 73AFD093 97DA50F9 632C0D8F BB59719A\
+          \ F4592581 D1D9D320\n  39D66E2F F7318548 E41CDFB4 FE2DE8DD 3624\n  \tquit\n\
+          !\n!\nmemory free low-watermark processor 79497\n!\n!\nspanning-tree mode\
+          \ rapid-pvst\nspanning-tree extend system-id\n!\n!\nvlan internal allocation\
+          \ policy ascending\n!\n!\n!\n!\n!\ninterface Ethernet0/0\n shutdown\n!\n\
+          interface Ethernet0/1\n shutdown\n!\ninterface Ethernet0/2\n no switchport\n\
+          \ ip address 10.1.3.2 255.255.255.0\n ipv6 address FE80::D2:1 link-local\n\
+          \ ipv6 address 2001:DB8:ACAD:1013::2/64\n!\ninterface Ethernet0/3\n switchport\
+          \ access vlan 11\n switchport mode access\n!\ninterface Vlan11\n ip address\
+          \ 192.168.3.1 255.255.255.0\n ipv6 address FE80::D2:2 link-local\n ipv6\
+          \ address 2001:DB8:ACAD:3000::1/64\n!\nip forward-protocol nd\nip forward-protocol\
+          \ udp\n!\n!\nip http server\nip http secure-server\nip ssh bulk-mode 131072\n\
+          ip route 0.0.0.0 0.0.0.0 Ethernet0/2 10.1.3.1\n!\nno logging btrace\nipv6\
+          \ route ::/0 Ethernet0/2 2001:DB8:ACAD:1013::1\n!\n!\n!\ncontrol-plane\n\
+          !\n!\nbanner motd ^CC D2, Implement VRF-Lite ^C\n!\nline con 0\n exec-timeout\
+          \ 0 0\n logging synchronous\nline aux 0\nline vty 0 4\n exec-timeout 0 0\n\
+          \ privilege level 15\n password cisco123\n logging synchronous\n login\n\
+          \ transport input ssh\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: D2
+    node_definition: ioll2-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: 184
+    y: 150
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: PC1
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: -33
+    y: 220
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n7
+    image_definition: null
+    label: PC3
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 41
+    y: 220
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n0
+    n2: n2
+    i1: i2
+    i2: i2
+    conditioning: {}
+    label: R2-GigabitEthernet2<->R1-GigabitEthernet2
+  - id: l1
+    n1: n2
+    n2: n1
+    i1: i3
+    i2: i3
+    conditioning: {}
+    label: R1-GigabitEthernet3<->R3-GigabitEthernet3
+  - id: l2
+    n1: n2
+    n2: n3
+    i1: i1
+    i2: i2
+    conditioning: {}
+    label: R1-GigabitEthernet1<->A1-GigabitEthernet0/1
+  - id: l3
+    n1: n3
+    n2: n5
+    i1: i3
+    i2: i3
+    conditioning: {}
+    label: A1-GigabitEthernet0/2<->D2-Ethernet0/2
+  - id: l4
+    n1: n3
+    n2: n4
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: A1-GigabitEthernet0/0<->D1-Ethernet0/0
+  - id: l5
+    n1: n5
+    n2: n7
+    i1: i4
+    i2: i0
+    conditioning: {}
+    label: D2-Ethernet0/3<->PC3-eth0
+  - id: l6
+    n1: n4
+    n2: n6
+    i1: i2
+    i2: i0
+    conditioning: {}
+    label: D1-Ethernet0/1<->PC1-eth0
+lab:
+  description: Lab - Implement VRF-Lite
+  notes: ''
+  title: CCNP ENCOR v8 - Module 6 VRF Lite - LAB
+  version: 0.3.0

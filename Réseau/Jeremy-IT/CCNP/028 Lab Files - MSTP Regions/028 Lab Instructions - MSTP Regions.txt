@@ -1,0 +1,34 @@
+# Lab Instructions #
+---
+-
+- **Step 1** - Create the necessary VLANs on each switch.
+- Configure the links between the switches as static trunks that allow only the necessary VLANs.
+- Explicitly disable DTP.
+- Configure VLAN 999 as the native VLAN.
+-
+---
+-
+- **Step 2** - Configure each MST region.
+- Configure each switch's priority as shown in the diagram.
+- Configure the region names shown in the diagram.
+- All regions should use revision number 1.
+- In Region12, map VLANs 1-50 to MSTI 1 and VLANs 51-100 to MSTI 2.
+- In Region34, map VLANs 1-75 to MSTI 1 and VLANs 76-150 to MSTI 2.
+- In Region56, map VLANs 51-100 to MSTI 1 and VLANs 101-150 to MSTI 2.
+-
+---
+-
+- **Step 3** - Verify the topology.
+- (1) Which switch is the CIST Root?
+- (2) Which switch functions as the CIST Regional Root of each region?
+- (3) Which switch functions as the IST Root of each region?
+- (4) Which ports are boundary ports?
+- (5) What is the topology of the CST? Which ports are Forwarding/Discarding?
+- (6) What is each switch's external and internal root path cost?
+- (7) Which ports are Master Ports? Why?
+-
+---
+-
+- **Step 4** - Examine the BPDUs sent between regions. What information is included?
+-
+---

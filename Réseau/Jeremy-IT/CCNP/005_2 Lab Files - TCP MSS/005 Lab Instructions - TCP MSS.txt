@@ -1,0 +1,30 @@
+# IP Info #
+- R1-ISP: 203.0.113.0/30 (ISP = .1, R1 = .2)
+- R2-ISP: 203.0.113.4/30 (ISP = .5, R2 = .6)
+- R1-SRV1: 192.168.1.0/24 (R1 = .1, SRV1 = .10)
+- R2-SRV2: 192.168.2.0/24 (R2 = .1, SRV2 = .10)
+- R1-R2 GRE: 192.168.12.0/30 (R1 = .1, R2 = .2)
+
+# Lab Instructions #
+1) Initiate a TCP connection (SSH) from R1 Tunnel0 to R2 Tunnel0.
+- R1/R2 login is jeremy/ccnp
+- R1/R2 enable secret is ccnp
+- Use a debug command to verify the MSS for the connection
+- Use a 'show' command to verify the MSS for the connection
+- Why is the MSS neither the default of 536 (for remote connections) or 1460 (for local connections)?
+2) Configure the MSS for TCP connections to/from R2 to use an MSS of 1400.
+3) Initiate a TCP connection (SSH) from R1 Tunnel0 to R2 Tunnel0.
+- Use a debug command to verify the MSS for the connection
+- Use a 'show' command to verify the MSS for the connection
+4) Initiate a TCP connection (SSH) from SRV1 to SRV2
+- Use a packet capture on the SRV1-R1 link to verify the MSS for the connection.
+- What message does R1 send to SRV1?
+5) Terminate the previous TCP connection from SRV1 to SRV2 and initiate a new one.
+- Use a packet capture on the SRV1-R1 link  to verify the MSS for the connection.
+6) Disable ICMP Unreachable messages on R1 G0/1
+7) Shutdown and power-on SRV1 and SRV2 to clear their caches
+8) Initiate a TCP connection (SSH) from SRV1 to SRV2
+- Use a packet capture on the SRV1-R1 link  to verify why SSH doesn't work this time.
+9) Configure R1's Tunnel0 interface to adjust MSS values to an appropriate size
+10) Initiate a TCP connection (SSH) from SRV1 to SRV2
+- Use a debug on R1 to verify that it adjusted the MSS values.

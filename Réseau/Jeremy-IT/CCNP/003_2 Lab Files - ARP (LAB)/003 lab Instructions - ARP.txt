@@ -1,0 +1,30 @@
+# IP Info #
+- Subnets are 192.168.XX.0/24 (XX = router numbers)
+- IP addresses are .X (X = router number)
+
+# Lab Instructions #
+1) Debug ARP messages on R1 & R2 .
+- Additional configurations are needed to display debug messages via the console connection
+
+2) Initiate a packet capture on the R1-R2 link .
+- I recommend increasing the Max Packets count over 50
+
+3) Configure two static routes on R1:
+- A recursive route to 192.168.23.0/24
+- A directly-connected route to 192.168.34.0/24
+
+4) Ping R2's G0/0 interface from R1.
+- Is there any new ARP debug output?
+
+5) Ping R3's G0/0 interface from R1.
+- Does R1 send an ARP request? Why or why not?
+
+6) Ping R4's G0/0 interface from R1.
+- Why does the ping fail?
+- Fix the issue and ping again
+7) Examine R1's ARP table.
+
+8) Change the ARP timeout of R1's G0/0 interface to 3 minutes.
+- After how much time will R1 attempt to refresh R2's ARP entry?
+
+9) Use Wireshark to examine each ARP exchange in the packet capture.

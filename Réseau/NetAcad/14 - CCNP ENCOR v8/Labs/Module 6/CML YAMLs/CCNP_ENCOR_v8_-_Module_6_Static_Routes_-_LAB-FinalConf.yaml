@@ -1,0 +1,455 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 7761 bytes\n\
+          !\n! Last configuration change at 15:51:05 UTC Sat Mar 14 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\nservice call-home\nplatform qfp utilization monitor load 80\nplatform\
+          \ punt-keepalive disable-kernel-core\nplatform console serial\n!\nhostname\
+          \ R1\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging console\n\
+          !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip cef load-sharing\
+          \ algorithm tunnel\n!\n!\n!\nlogin on-success log\nipv6 unicast-routing\n\
+          !\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n!\n!\n!\n!\nmultilink\
+          \ bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check\
+          \ crl\n!\ncrypto pki trustpoint TP-self-signed-4115541985\n enrollment selfsigned\n\
+          \ subject-name cn=IOS-Self-Signed-Certificate-4115541985\n revocation-check\
+          \ none\n rsakeypair TP-self-signed-4115541985\n!\n!\ncrypto pki certificate\
+          \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201\
+          \ 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305\
+          \ 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720\
+          \ 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330\
+          \ 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355\
+          \ 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230\
+          \ 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96\
+          \ 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7\
+          \ 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715\
+          \ B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18\
+          \ FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5\
+          \ DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7\
+          \ AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D\
+          \ C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327\
+          \ A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100\
+          \ 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04\
+          \ 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333\
+          \ 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66\
+          \ 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E\
+          \ CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2\
+          \ 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D\
+          \ CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7\
+          \ B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E\
+          \ 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9\
+          \ 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75\
+          \ 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n\
+          crypto pki certificate chain TP-self-signed-4115541985\n certificate self-signed\
+          \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+          \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+          \  69666963 6174652D 34313135 35343139 3835301E 170D3236 30333134 31313038\n\
+          \  31385A17 0D333630 33313331 31303831 385A3031 312F302D 06035504 03132649\n\
+          \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D34 31313535\n\
+          \  34313938 35308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+          \  0A028201 01008B8F AD2CB486 83F675AC 45FAECAC 07E4E935 05A24533 565F4B63\n\
+          \  203EF43D 9128FA6B 3DAE86FD F402E348 1D6D7335 F15172DA DFC7C237 7A9D181C\n\
+          \  B00F3F35 507D6A08 3CBD6153 05E99A6E 0811A47E 80DFE540 A0FAC1D2 6ECE6E73\n\
+          \  597B9799 AB893E7B 7D08C69D A4FD7D2C F4C165CE 4FAE18F8 7B85F5E5 CDBD5D19\n\
+          \  64848F12 88F7BD4C D91708B7 6C448A8F ADE30CCE 6F06FF0B FE2CE61A 78B49379\n\
+          \  58439C79 B136F731 81CB2EBB 0E12A1B0 65A2F579 2C96671D F4941F0E AC1907E6\n\
+          \  DD30039B 53AAAD45 3E501928 1CE222AA 03702DD9 F547BB04 AD297249 DE439261\n\
+          \  5684A553 AA267397 CC3206CF 14797765 F581E011 14503DCB C78AF3B5 0EA9EA0D\n\
+          \  0BD18EBD F37F0203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+          \  301F0603 551D2304 18301680 145EBE3D BEB18D9C A40552B9 927E0231 90BC943A\n\
+          \  12301D06 03551D0E 04160414 5EBE3DBE B18D9CA4 0552B992 7E023190 BC943A12\n\
+          \  300D0609 2A864886 F70D0101 05050003 82010100 5048BC8E 1A3F358E 832B5C41\n\
+          \  6051B3C4 82160727 76861CAE F1BC7A20 BDEF8CB9 A34E4522 36758004 74CD68F4\n\
+          \  E410F4AD 8A75FC70 3243B9CA 0B67F088 4CD866ED D2AB2277 6A2CFC90 FD034656\n\
+          \  714938B6 43EF5A2C 7C09D98D 8104D675 6A211481 E9D7E062 28660B7E 52D543D0\n\
+          \  E33160C3 AF3BC338 FAB70CE3 83AC422E 68921CF4 CC4560A9 BA0CEDBF C6D25565\n\
+          \  DF5FD33C 252807D3 1502C2FE DE59CF38 3DA4FCBF 609C50EB 14DD4CBA 5364F8BD\n\
+          \  EA6AB5D5 562E882D B51FFA34 00C90568 59A2C95D E39BEDD5 0AF1B682 63D56D93\n\
+          \  DDC6F4E3 D57E4F30 4ABFC1DC D437CFA5 DB52A4E8 C409FD3B DA5DC731 4FEE28BE\n\
+          \  AA1475E8 BFE7953A A4258B6E DDE52DFC DC975933\n  \tquit\n!\nlicense udi\
+          \ pid CSR1000V sn 9SBFG73WRIY\ndiagnostic bootup level minimal\nmemory free\
+          \ low-watermark processor 71464\n!\n!\nspanning-tree extend system-id\n\
+          !\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 192.168.1.1 255.255.255.224\n\
+          \ ipv6 address FE80::1:4 link-local\n ipv6 address 2001:DB8:ACAD:1000::1/64\n\
+          !\ninterface GigabitEthernet1\n ip address 10.1.2.1 255.255.255.0\n negotiation\
+          \ auto\n ipv6 address FE80::1:1 link-local\n ipv6 address 2001:DB8:ACAD:1012::1/64\n\
+          \ no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet2\n ip address\
+          \ 10.1.3.1 255.255.255.128\n negotiation auto\n ipv6 address FE80::1:2 link-local\n\
+          \ ipv6 address 2001:DB8:ACAD:1013::1/64\n no mop enabled\n no mop sysid\n\
+          !\ninterface GigabitEthernet3\n ip address 10.1.3.129 255.255.255.128\n\
+          \ negotiation auto\n ipv6 address FE80::1:3 link-local\n ipv6 address 2001:DB8:ACAD:1014::1/64\n\
+          \ no mop enabled\n no mop sysid\n!\nip forward-protocol nd\nno ip http server\n\
+          ip http secure-server\n!\nip route 10.2.3.0 255.255.255.0 GigabitEthernet1\
+          \ 10.1.2.2\nip route 10.2.3.0 255.255.255.0 GigabitEthernet2 10.1.3.3\n\
+          ip route 10.2.3.0 255.255.255.0 GigabitEthernet3 10.1.3.130\nip route 192.168.2.1\
+          \ 255.255.255.255 GigabitEthernet1 10.1.2.2\nip route 192.168.2.1 255.255.255.255\
+          \ GigabitEthernet2 10.1.3.3\nip route 192.168.2.1 255.255.255.255 GigabitEthernet3\
+          \ 10.1.3.130\nip route 192.168.3.1 255.255.255.255 GigabitEthernet2 10.1.3.3\n\
+          ip route 192.168.3.1 255.255.255.255 GigabitEthernet3 10.1.3.130\nip route\
+          \ 192.168.3.1 255.255.255.255 GigabitEthernet1 10.1.2.2 3\nip route 209.165.200.0\
+          \ 255.255.255.0 Null0\n!\n!\nipv6 route 2001:DB8:ACAD:1023::/64 GigabitEthernet1\
+          \ 2001:DB8:ACAD:1012::2\nipv6 route 2001:DB8:ACAD:1023::/64 GigabitEthernet2\
+          \ 2001:DB8:ACAD:1013::3 50\nipv6 route 2001:DB8:ACAD:1023::/64 GigabitEthernet3\
+          \ 2001:DB8:ACAD:1014::3 50\nipv6 route 2001:DB8:ACAD:2000::1/128 GigabitEthernet1\
+          \ 2001:DB8:ACAD:1012::2\nipv6 route 2001:DB8:ACAD:2000::1/128 GigabitEthernet2\
+          \ 2001:DB8:ACAD:1013::3 50\nipv6 route 2001:DB8:ACAD:2000::1/128 GigabitEthernet3\
+          \ 2001:DB8:ACAD:1014::3 50\nipv6 route 2001:DB8:ACAD:3000::1/128 GigabitEthernet2\
+          \ 2001:DB8:ACAD:1013::3\nipv6 route 2001:DB8:ACAD:3000::1/128 GigabitEthernet1\
+          \ 2001:DB8:ACAD:1013::3 100\nipv6 route 2001:DB8:ACAD:3000::1/128 GigabitEthernet3\
+          \ 2001:DB8:ACAD:1014::3\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner\
+          \ motd ^C R1, Investigate Static Routes ^C\n!\nline con 0\n exec-timeout\
+          \ 0 0\n logging synchronous\n stopbits 1\nline vty 0 4\n exec-timeout 0\
+          \ 0\n privilege level 15\n password cisco123\n logging synchronous\n login\n\
+          \ transport input ssh\n!\ncall-home\n ! If contact email address in call-home\
+          \ is configured as sch-smart-licensing@cisco.com\n ! the email address configured\
+          \ in Cisco Smart License Portal will be used as contact email address to\
+          \ send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+          \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n\
+          !\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: -254
+    y: -42
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 7738 bytes\n\
+          !\n! Last configuration change at 15:51:05 UTC Sat Mar 14 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\nservice call-home\nplatform qfp utilization monitor load 80\nplatform\
+          \ punt-keepalive disable-kernel-core\nplatform console serial\n!\nhostname\
+          \ R3\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging console\n\
+          !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip cef load-sharing\
+          \ algorithm tunnel\n!\n!\n!\nlogin on-success log\nipv6 unicast-routing\n\
+          !\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n!\n!\n!\n!\nmultilink\
+          \ bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check\
+          \ crl\n!\ncrypto pki trustpoint TP-self-signed-137683187\n enrollment selfsigned\n\
+          \ subject-name cn=IOS-Self-Signed-Certificate-137683187\n revocation-check\
+          \ none\n rsakeypair TP-self-signed-137683187\n!\n!\ncrypto pki certificate\
+          \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201\
+          \ 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305\
+          \ 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720\
+          \ 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330\
+          \ 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355\
+          \ 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230\
+          \ 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96\
+          \ 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7\
+          \ 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715\
+          \ B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18\
+          \ FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5\
+          \ DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7\
+          \ AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D\
+          \ C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327\
+          \ A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100\
+          \ 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04\
+          \ 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333\
+          \ 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66\
+          \ 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E\
+          \ CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2\
+          \ 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D\
+          \ CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7\
+          \ B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E\
+          \ 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9\
+          \ 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75\
+          \ 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n\
+          crypto pki certificate chain TP-self-signed-137683187\n certificate self-signed\
+          \ 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+          \  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+          \  69666963 6174652D 31333736 38333138 37301E17 0D323630 33313431 31303833\n\
+          \  325A170D 33363033 31333131 30383332 5A303031 2E302C06 03550403 1325494F\n\
+          \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3133 37363833\n\
+          \  31383730 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n\
+          \  82010100 D12B676F D7C9CA6D 9C7E6E54 F3ED14DA BCB410F1 09CFE66D 13AF6ABE\n\
+          \  FBF73F0C C3BB4F38 101BB9E1 B986F79F 1FBE946D F12A9DC4 04D5F106 54E763C8\n\
+          \  6E7A89B0 FB9F405B FF71E91E 66CDE34D A324EB98 7E4A03A8 07E54D50 374178B5\n\
+          \  107B58E3 B778F295 629342CD ED456888 5B99E7C9 93FC0DF0 55A27BFD 84D004D7\n\
+          \  0937ABC0 C00C5C1B D864CDAF 20BA2852 4D788F87 E1A02490 0B9FA96E 870DA26E\n\
+          \  A401B42A A4E9F9B0 E1CFE8D3 9C954F0F DA0C3CDF 1742819F 3A8FAA82 8C480AED\n\
+          \  51680194 60BEAA2B A42EAE5E 065AD2B8 903C8398 96304153 B84F8FF9 713B5876\n\
+          \  6C04EE22 89BBF592 2663602B 247C2061 CCC02DB1 8C1FFD5D E49DAD51 13BABDFA\n\
+          \  08B06197 02030100 01A35330 51300F06 03551D13 0101FF04 05300301 01FF301F\n\
+          \  0603551D 23041830 16801460 E411DC6E 32502B2C 21A5C08E 14F9F93E D0430030\n\
+          \  1D060355 1D0E0416 041460E4 11DC6E32 502B2C21 A5C08E14 F9F93ED0 4300300D\n\
+          \  06092A86 4886F70D 01010505 00038201 010038D6 6133C59F C7ACADCB C97BEEC9\n\
+          \  549BA724 A3D96ABE 9D324969 DDAB60B0 67347239 088859A8 078927C6 B6CEBF8B\n\
+          \  D07CC84C 04BBB048 DADF5D24 1DCAEB5A 3C611198 1C6345F7 F7D99626 183BEC88\n\
+          \  621A452C 72D3EEAE BEF83F7D 1E11D70C C6E304BF 4D3CE96E 7418EF74 C8A766EC\n\
+          \  7BEE9C77 97E5C4D7 580BE4EA EB2D65DA F3B8E87F E8284D4A FCEEC824 9D730136\n\
+          \  A1F48407 7A96CA2A 98A2CFE6 13A99CC5 BF4D93EC 3B720850 22888F4E 60FCAABF\n\
+          \  59D8D54D 2B7F21C2 EB3D96F3 A85B315C C8D27153 C63081ED 99A29153 BF63F0A8\n\
+          \  BB1E2CB8 6C051D22 95895A77 A9FDDE67 98862D6E 6E5541A3 7A019357 27029639\n\
+          \  02A5A09B EB6FD33D 112124DA 8BD18D31 9D5C\n  \tquit\n!\nlicense udi pid\
+          \ CSR1000V sn 9X6A27BBF8D\ndiagnostic bootup level minimal\nmemory free\
+          \ low-watermark processor 71464\n!\n!\nspanning-tree extend system-id\n\
+          !\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 192.168.3.1 255.255.255.224\n\
+          \ ipv6 address FE80::3:4 link-local\n ipv6 address 2001:DB8:ACAD:3000::1/64\n\
+          !\ninterface GigabitEthernet1\n ip address 10.2.3.3 255.255.255.0\n negotiation\
+          \ auto\n ipv6 address FE80::3:1 link-local\n ipv6 address 2001:DB8:ACAD:1023::3/64\n\
+          \ no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet2\n ip address\
+          \ 10.1.3.3 255.255.255.128\n negotiation auto\n ipv6 address FE80::3:2 link-local\n\
+          \ ipv6 address 2001:DB8:ACAD:1013::3/64\n no mop enabled\n no mop sysid\n\
+          !\ninterface GigabitEthernet3\n ip address 10.1.3.130 255.255.255.128\n\
+          \ negotiation auto\n ipv6 address FE80::3:3 link-local\n ipv6 address 2001:DB8:ACAD:1014::3/64\n\
+          \ no mop enabled\n no mop sysid\n!\nip forward-protocol nd\nno ip http server\n\
+          ip http secure-server\n!\nip route 10.1.2.0 255.255.255.0 GigabitEthernet2\
+          \ 10.1.3.1\nip route 10.1.2.0 255.255.255.0 GigabitEthernet3 10.1.3.129\n\
+          ip route 10.1.2.0 255.255.255.0 GigabitEthernet1 10.2.3.2 3\nip route 192.168.1.1\
+          \ 255.255.255.255 GigabitEthernet2 10.1.3.1\nip route 192.168.1.1 255.255.255.255\
+          \ GigabitEthernet3 10.1.3.129\nip route 192.168.1.1 255.255.255.255 GigabitEthernet1\
+          \ 10.2.3.2 3\nip route 192.168.2.1 255.255.255.255 GigabitEthernet1 10.2.3.2\n\
+          ip route 192.168.2.1 255.255.255.255 GigabitEthernet2 10.1.3.1\nip route\
+          \ 192.168.2.1 255.255.255.255 GigabitEthernet3 10.1.3.129\n!\n!\nipv6 route\
+          \ 2001:DB8:ACAD:1000::1/128 GigabitEthernet2 2001:DB8:ACAD:1013::1\nipv6\
+          \ route 2001:DB8:ACAD:1000::1/128 GigabitEthernet1 2001:DB8:ACAD:1023::2\
+          \ 50\nipv6 route 2001:DB8:ACAD:1000::1/128 GigabitEthernet3 2001:DB8:ACAD:1014::1\n\
+          ipv6 route 2001:DB8:ACAD:1012::/64 GigabitEthernet1 2001:DB8:ACAD:1023::2\n\
+          ipv6 route 2001:DB8:ACAD:1012::/64 GigabitEthernet2 2001:DB8:ACAD:1013::1\
+          \ 50\nipv6 route 2001:DB8:ACAD:1012::/64 GigabitEthernet3 2001:DB8:ACAD:1014::1\
+          \ 50\nipv6 route 2001:DB8:ACAD:2000::1/128 GigabitEthernet1 2001:DB8:ACAD:1023::2\n\
+          ipv6 route 2001:DB8:ACAD:2000::1/128 GigabitEthernet3 2001:DB8:ACAD:1014::1\
+          \ 50\nipv6 route 2001:DB8:ACAD:2000::1/128 GigabitEthernet2 2001:DB8:ACAD:1013::1\
+          \ 50\nipv6 route 3333::/64 Null0\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n\
+          !\n!\nbanner motd ^C R3, Investigate Static Routes ^C\n!\nline con 0\n exec-timeout\
+          \ 0 0\n logging synchronous\n stopbits 1\nline vty 0 4\n exec-timeout 0\
+          \ 0\n privilege level 15\n password cisco123\n logging synchronous\n login\n\
+          \ transport input ssh\n!\ncall-home\n ! If contact email address in call-home\
+          \ is configured as sch-smart-licensing@cisco.com\n ! the email address configured\
+          \ in Cisco Smart License Portal will be used as contact email address to\
+          \ send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+          \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n\
+          !\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: R3
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 19
+    y: -43
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 7343 bytes\n\
+          !\n! Last configuration change at 15:51:05 UTC Sat Mar 14 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\nservice call-home\nplatform qfp utilization monitor load 80\nplatform\
+          \ punt-keepalive disable-kernel-core\nplatform console serial\n!\nhostname\
+          \ R2\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging console\n\
+          !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\n!\n!\n!\n\
+          login on-success log\nipv6 unicast-routing\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+          \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n\
+          \ enrollment pkcs12\n revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-2176465528\n\
+          \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-2176465528\n\
+          \ revocation-check none\n rsakeypair TP-self-signed-2176465528\n!\n!\ncrypto\
+          \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+          \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+          \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+          \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+          \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+          \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+          \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+          \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+          \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+          \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+          \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+          \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+          \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+          \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+          \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+          \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+          \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+          \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+          \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+          \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+          \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+          \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+          \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+          \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+          \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+          \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n\
+          \  \tquit\ncrypto pki certificate chain TP-self-signed-2176465528\n certificate\
+          \ self-signed 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886\
+          \ F70D0101 05050030\n  31312F30 2D060355 04031326 494F532D 53656C66 2D536967\
+          \ 6E65642D 43657274\n  69666963 6174652D 32313736 34363535 3238301E 170D3236\
+          \ 30333134 31313038\n  32385A17 0D333630 33313331 31303832 385A3031 312F302D\
+          \ 06035504 03132649\n  4F532D53 656C662D 5369676E 65642D43 65727469 66696361\
+          \ 74652D32 31373634\n  36353532 38308201 22300D06 092A8648 86F70D01 01010500\
+          \ 0382010F 00308201\n  0A028201 0100EF61 CC416E0F 6504B49B 59C44F56 FFC0F036\
+          \ BB1B20C7 D42E1F8F\n  2FC84899 040CD4C4 730B9C36 CFF3F123 F2D22AAB 97E1D1A4\
+          \ CE799511 A882BD6B\n  C129D55D AA6B1700 61118496 82467134 C86FB4C5 C495F78C\
+          \ 343D6101 6693D96A\n  A357659A 5E697256 DAE90A54 AC24BB13 386B7853 2A39BFC3\
+          \ BF9E790B 80113DD5\n  BF550576 AE2BD549 E503AB18 B37C06B2 EBA054AF 26F1C3AB\
+          \ EAD156AD B0DE4A4B\n  E7701A3B 47CFCFBC C109E326 EF135BA0 A87DE341 CFB5B7C4\
+          \ 0F14D7D7 075DEBC9\n  1AFF6656 AE0E486D 445CB76D 698EE665 D0B8B476 D678C361\
+          \ EC0AB0D8 90669C5B\n  710D38A2 5FB62605 51B097CB FE31C15A D6882461 43334BE1\
+          \ 81ACC416 A219D3B4\n  418EB492 AB730203 010001A3 53305130 0F060355 1D130101\
+          \ FF040530 030101FF\n  301F0603 551D2304 18301680 14B7887E A0680C06 9F82C406\
+          \ 3C2E71B4 B1BEEAF7\n  6C301D06 03551D0E 04160414 B7887EA0 680C069F 82C4063C\
+          \ 2E71B4B1 BEEAF76C\n  300D0609 2A864886 F70D0101 05050003 82010100 0ECFDDB0\
+          \ F785D664 596DF217\n  33172D55 166FE790 9A6255DF 04C4D98D 23CE6766 E3948E58\
+          \ 580ED786 151480D4\n  6872EBB2 361F5946 E662EC15 54564939 106D80A9 CFAD2706\
+          \ 1342DF91 37E48B54\n  90E0E2F4 CCA750AC A011E03B 499F0C72 9ED6F43E 1C9E2F0E\
+          \ 5D843B46 4DABBE83\n  D0C71A5E 74804ADB 427DE039 EF12CAE9 DA63DA66 D7C9F7F1\
+          \ 652624F5 BAC546D7\n  8B385E0A DE3206FA C65AF4A7 D0B8281F 124AD6BC EE80CBD5\
+          \ B2A31C5A 1D72306E\n  D841469C 38BCF181 D6518D76 5AA8ECE2 7840725B A2B2290F\
+          \ C5E4058E D994D97D\n  66811B69 5E1AC6FB B941D8E6 372EECDB 3954A415 80218475\
+          \ 6F3F457E C1BF290C\n  84521ADC 60067533 626F0957 AFC10560 8EBDEF0B\n  \t\
+          quit\n!\nlicense udi pid CSR1000V sn 9VX3ZKH5SB2\ndiagnostic bootup level\
+          \ minimal\nmemory free low-watermark processor 71464\n!\n!\nspanning-tree\
+          \ extend system-id\n!\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address\
+          \ 192.168.2.1 255.255.255.224\n ipv6 address FE80::2:3 link-local\n ipv6\
+          \ address 2001:DB8:ACAD:2000::1/64\n!\ninterface GigabitEthernet1\n ip address\
+          \ 10.1.2.2 255.255.255.0\n negotiation auto\n ipv6 address FE80::2:1 link-local\n\
+          \ ipv6 address 2001:DB8:ACAD:1012::2/64\n no mop enabled\n no mop sysid\n\
+          !\ninterface GigabitEthernet2\n ip address 10.2.3.2 255.255.255.0\n negotiation\
+          \ auto\n ipv6 address FE80::2:2 link-local\n ipv6 address 2001:DB8:ACAD:1023::2/64\n\
+          \ no mop enabled\n no mop sysid\n!\nip forward-protocol nd\nno ip http server\n\
+          ip http secure-server\n!\nip route 10.1.3.0 255.255.255.128 GigabitEthernet1\
+          \ 10.1.2.1\nip route 10.1.3.0 255.255.255.128 GigabitEthernet2 10.2.3.3\n\
+          ip route 10.1.3.128 255.255.255.128 GigabitEthernet2 10.2.3.3\nip route\
+          \ 10.1.3.128 255.255.255.128 GigabitEthernet1 10.1.2.1\nip route 192.168.1.1\
+          \ 255.255.255.255 GigabitEthernet1 10.1.2.1\nip route 192.168.1.1 255.255.255.255\
+          \ GigabitEthernet2 10.2.3.3\nip route 192.168.3.1 255.255.255.255 GigabitEthernet2\
+          \ 10.2.3.3\nip route 192.168.3.1 255.255.255.255 GigabitEthernet1 10.1.2.1\n\
+          !\n!\nipv6 route 2001:DB8:ACAD:1000::1/128 GigabitEthernet2 2001:DB8:ACAD:1023::3\
+          \ 50\nipv6 route 2001:DB8:ACAD:1000::1/128 GigabitEthernet1 2001:DB8:ACAD:1012::1\n\
+          ipv6 route 2001:DB8:ACAD:1013::/64 GigabitEthernet2 2001:DB8:ACAD:1023::3\
+          \ 50\nipv6 route 2001:DB8:ACAD:1013::/64 GigabitEthernet1 2001:DB8:ACAD:1012::1\n\
+          ipv6 route 2001:DB8:ACAD:1014::/64 GigabitEthernet1 2001:DB8:ACAD:1012::1\
+          \ 50\nipv6 route 2001:DB8:ACAD:1014::/64 GigabitEthernet2 2001:DB8:ACAD:1023::3\n\
+          ipv6 route 2001:DB8:ACAD:3000::1/128 GigabitEthernet1 2001:DB8:ACAD:1012::1\
+          \ 50\nipv6 route 2001:DB8:ACAD:3000::1/128 GigabitEthernet2 2001:DB8:ACAD:1023::3\n\
+          !\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C R2, Investigate\
+          \ Static Routes ^C\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\n\
+          \ stopbits 1\nline vty 0 4\n exec-timeout 0 0\n privilege level 15\n password\
+          \ cisco123\n logging synchronous\n login\n transport input ssh\n!\ncall-home\n\
+          \ ! If contact email address in call-home is configured as sch-smart-licensing@cisco.com\n\
+          \ ! the email address configured in Cisco Smart License Portal will be used\
+          \ as contact email address to send SCH notifications.\n contact-email-addr\
+          \ sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n  active\n  destination\
+          \ transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: R2
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: -119
+    y: -161
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+links:
+  - id: l0
+    n1: n0
+    n2: n2
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: R1-GigabitEthernet1<->R2-GigabitEthernet1
+  - id: l1
+    n1: n2
+    n2: n1
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: R2-GigabitEthernet2<->R3-GigabitEthernet1
+  - id: l2
+    n1: n0
+    n2: n1
+    i1: i2
+    i2: i2
+    conditioning: {}
+    label: R1-GigabitEthernet2<->R3-GigabitEthernet2
+  - id: l3
+    n1: n0
+    n2: n1
+    i1: i3
+    i2: i3
+    conditioning: {}
+    label: R1-GigabitEthernet3<->R3-GigabitEthernet3
+lab:
+  description: Lab - Investigate Static Routes
+  notes: ''
+  title: CCNP ENCOR v8 - Module 6 Static Routes - LAB
+  version: 0.3.0

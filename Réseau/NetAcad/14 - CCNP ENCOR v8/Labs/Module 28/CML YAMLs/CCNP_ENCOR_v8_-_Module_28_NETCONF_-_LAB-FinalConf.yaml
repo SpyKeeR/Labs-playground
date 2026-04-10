@@ -1,0 +1,234 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: Switch
+    node_definition: unmanaged_switch
+    parameters: {}
+    ram: null
+    tags: []
+    x: -120
+    y: -120
+    interfaces:
+      - id: i0
+        label: port0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i1
+        label: port1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i2
+        label: port2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i3
+        label: port3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i4
+        label: port4
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i5
+        label: port5
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i6
+        label: port6
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i7
+        label: port7
+        mac_address: null
+        type: physical
+        slot: 7
+  - boot_disk_size: null
+    configuration:
+      - name: default
+        content: System Bridge
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: VMnet 15
+    node_definition: external_connector
+    parameters: {}
+    ram: null
+    tags: []
+    x: -280
+    y: -120
+    interfaces:
+      - id: i0
+        label: port
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 6501 bytes\n\
+          !\n! Last configuration change at 12:14:13 UTC Wed Mar 25 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\nservice call-home\nplatform qfp utilization monitor load 80\nplatform\
+          \ punt-keepalive disable-kernel-core\nplatform console serial\n!\nhostname\
+          \ R1\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging console\n\
+          !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain\
+          \ name example.netacad.com\nip dhcp excluded-address 192.168.1.1 192.168.1.10\n\
+          !\nip dhcp pool LAN\n network 192.168.1.0 255.255.255.0\n default-router\
+          \ 192.168.1.1\n domain-name example.netacad.com\n!\n!\n!\nlogin on-success\
+          \ log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n!\n!\n!\n!\nmultilink\
+          \ bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check\
+          \ crl\n!\ncrypto pki trustpoint TP-self-signed-973815399\n enrollment selfsigned\n\
+          \ subject-name cn=IOS-Self-Signed-Certificate-973815399\n revocation-check\
+          \ none\n rsakeypair TP-self-signed-973815399\n!\n!\ncrypto pki certificate\
+          \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201\
+          \ 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305\
+          \ 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720\
+          \ 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330\
+          \ 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355\
+          \ 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230\
+          \ 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96\
+          \ 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7\
+          \ 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715\
+          \ B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18\
+          \ FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5\
+          \ DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7\
+          \ AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D\
+          \ C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327\
+          \ A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100\
+          \ 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04\
+          \ 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333\
+          \ 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66\
+          \ 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E\
+          \ CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2\
+          \ 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D\
+          \ CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7\
+          \ B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E\
+          \ 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9\
+          \ 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75\
+          \ 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n\
+          crypto pki certificate chain TP-self-signed-973815399\n certificate self-signed\
+          \ 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+          \  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+          \  69666963 6174652D 39373338 31353339 39301E17 0D323630 33323531 31323035\n\
+          \  375A170D 33363033 32343131 32303537 5A303031 2E302C06 03550403 1325494F\n\
+          \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3937 33383135\n\
+          \  33393930 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n\
+          \  82010100 9C4AAF36 0CE383C9 C59FF243 B9AE0CDA F992561C 1B7288CE 6C24A1CE\n\
+          \  A2D40A11 8EC5521F DB423240 BE53011B DEFF44D7 D5EF4C7F 0C9F9CC0 94AF8C27\n\
+          \  03982D99 E822DB6B FEE6C1C3 CE797CB0 4F59B263 D3C7A3EB 02797E96 BAD22A57\n\
+          \  8DCD1CA0 DD6B3F71 E5D67AE3 7923CBCD 7C2C960D FB3B979B 4FAF372E 8F4C7279\n\
+          \  3BFD7949 1C0A9F91 3B6173AA F051F46F D0093F7E BADEE3FF B4C55004 4637D642\n\
+          \  19734889 FBCE01C3 3FF59303 BC44930C 9229786B 5B6E9980 6F250725 B4F02277\n\
+          \  41B1BBC1 BFC8D2D8 7B8BD610 2C0E51D0 BE735189 1D876FCC 09EB826D AC26F5C4\n\
+          \  71C0836A FE8B881C B991AAC4 AF367838 6A760DC7 824C0685 74DC9DFD 90B09465\n\
+          \  E600F21B 02030100 01A35330 51300F06 03551D13 0101FF04 05300301 01FF301F\n\
+          \  0603551D 23041830 16801433 2AADF5E6 C2CC1B23 01C53C4E 9352B087 74FE8130\n\
+          \  1D060355 1D0E0416 0414332A ADF5E6C2 CC1B2301 C53C4E93 52B08774 FE81300D\n\
+          \  06092A86 4886F70D 01010505 00038201 01006ACB 46FBBC27 231D8023 38625ACE\n\
+          \  FB0517DE C54CA27A B58A8704 15305CF0 295CA7D1 F6CA7886 33E37601 26AB44E8\n\
+          \  CD6B0C1B E3E536F0 E6FE9565 4D1A07FA 12640D75 6888C3C4 5DF86DD4 86324536\n\
+          \  0D5473F6 25795B95 BFDEEC3B 7E9205FC 0692A520 C02C1EB6 0878B591 8980EBE8\n\
+          \  C73D398B E9AD5B4F 29F45522 D63E1570 D3B8DB5F 0D3A2AF7 33E5C08B BDB9813F\n\
+          \  F08645A4 D01C4219 CC9044FD B8C7ED85 C3A4E45D 25CE99B8 DD16A439 B5673EF9\n\
+          \  D43FC013 9D79C54A 4F5B058B 0D7230D5 D9862B4B 0D04F6B1 0793F5F8 AC539E32\n\
+          \  1108A233 70B31B53 52B28852 3C39E85A B7002BAF F503F5A6 B1E0A0AE 1DD8AD91\n\
+          \  CE1CD0F2 880BD4CA 63B0F127 8F15052D 907F\n  \tquit\n!\nlicense udi pid\
+          \ CSR1000V sn 93T1QAV3SR4\ndiagnostic bootup level minimal\nmemory free\
+          \ low-watermark processor 71464\n!\n!\nspanning-tree extend system-id\n\
+          !\nusername cisco privilege 15 password 0 cisco123!\n!\nredundancy\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          interface Loopback1\n description SpyKeeR loopback\n ip address 10.1.1.1\
+          \ 255.255.255.0\n!\ninterface GigabitEthernet1\n description link to PC\n\
+          \ ip address 192.168.1.1 255.255.255.0\n negotiation auto\n no mop enabled\n\
+          \ no mop sysid\n!\ninterface GigabitEthernet2\n no ip address\n shutdown\n\
+          \ negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet3\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\ninterface GigabitEthernet4\n no ip address\n shutdown\n negotiation\
+          \ auto\n no mop enabled\n no mop sysid\n!\nip forward-protocol nd\nno ip\
+          \ http server\nip http secure-server\n!\n!\n!\n!\n!\n!\n!\n!\ncontrol-plane\n\
+          !\n!\n!\n!\n!\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\n\
+          \ stopbits 1\nline vty 0 4\n exec-timeout 0 0\n logging synchronous\n login\
+          \ local\n transport input ssh\nline vty 5 15\n exec-timeout 0 0\n logging\
+          \ synchronous\n login local\n transport input ssh\n!\ncall-home\n ! If contact\
+          \ email address in call-home is configured as sch-smart-licensing@cisco.com\n\
+          \ ! the email address configured in Cisco Smart License Portal will be used\
+          \ as contact email address to send SCH notifications.\n contact-email-addr\
+          \ sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n  active\n  destination\
+          \ transport-method http\n!\n!\n!\n!\n!\nnetconf-yang\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 80
+    y: -120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet4
+        mac_address: null
+        type: physical
+        slot: 3
+links:
+  - id: l0
+    n1: n2
+    n2: n0
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: R1-GigabitEthernet1<->Switch-port0
+  - id: l1
+    n1: n0
+    n2: n1
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: Switch-port1<->VMnet 15-port
+lab:
+  description: Lab - Use NETCONF to Access an IOS XE Router
+  notes: ''
+  title: CCNP ENCOR v8 - Module 28 NETCONF - LAB
+  version: 0.3.0

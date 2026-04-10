@@ -1,0 +1,12 @@
+# IP Info #
+- All segments are 192.168.XX.0/24 (XX = the router numbers. R1-R2 = 12.0, R2-R4 = 24.0, etc)
+- All router IP addresses are .X (X = router number)
+- R9 has three loopbacks: 1.1.1.1, 2.2.2.2, 3.3.3.3: you will traceroute to R9's loopbacks in this lab.
+
+# Lab Instructions #
+- Messages from R1 to 1.1.1.1 take the path via R2.
+- Messages from R1 to 2.2.2.2 take the path via R7.
+- Messages from R1 to 3.3.3.3 take the path via R3.
+1) Traceroute from R1 to 1.1.1.1. Fix any issues preventing R1 from receiving three replies from R9.
+2) Traceroute from R1 to 2.2.2.2. Fix any issues preventing R1 from receiving three replies from R9.
+3) Traceroute from R1 to 3.3.3.3. Fix any issues preventing R1 from receiving three replies from R9.

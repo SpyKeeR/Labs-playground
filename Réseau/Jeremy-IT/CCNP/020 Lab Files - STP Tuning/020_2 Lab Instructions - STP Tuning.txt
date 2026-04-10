@@ -1,0 +1,9 @@
+# Lab Instructions #
+1) Modify Bridge Priority to achieve the following:
+- SW1 should be Root for VLAN 10 and Secondary for VLAN 20
+- SW2 should be Root for VLAN 20 and Secondary for VLAN 10
+2) Modify Port Cost to achieve the following:
+- In VLAN 10, all traffic from users connected to SW4 should pass through SW2 before reaching the Root Bridge.
+- In VLAN 20, all traffic from users connected to SW3 should pass through SW1 before reaching the Root Bridge.
+3) Modify Port Priority to achieve the following:
+- Frames forwarded between SW1 and SW2 should use the G0/1-G0/1 link in VLANs 10 and 20.

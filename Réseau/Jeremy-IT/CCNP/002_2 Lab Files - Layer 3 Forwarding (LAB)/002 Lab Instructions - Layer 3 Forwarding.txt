@@ -1,0 +1,17 @@
+##IP Info
+Subnets are 192.168.XX.0/24 (R1-R2 segment is 192.168.12.0/24, R2-R5 segment is 192.168.25.0/24, R3-R5 segment is 192.168.35.0/24, etc.)
+IP addresses are .X (R1 IPs are .1, R2 IPs are .2, etc.)
+
+##Lab Instructions
+1. Examine the routing table of R1. What routing protocols is R1 running?
+
+2. What router will R1 use as the next hop to forward packets from PC1 to each of the following destinations?
+>203.0.113.113
+>8.8.8.8
+>172.20.20.27
+>198.0.27.56
+>192.168.255.238
+
+3. Verify each of your answers using both of the following methods:
+>Verify using a command on PC1
+>Verify using a 'show' command on R1

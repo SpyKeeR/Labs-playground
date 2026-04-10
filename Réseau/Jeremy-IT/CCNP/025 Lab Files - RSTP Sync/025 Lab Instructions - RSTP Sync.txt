@@ -1,0 +1,16 @@
+# Lab Instructions #
+- Connections between switches are administratively disabled. 
+- Enable Spanning Tree event and synchronization debugging before starting the lab.
+1) Start a packet capture and then enable the SW1-SW2 link.
+- Analyze the debug messages shown on SW1 and SW2. 
+- Analyze the packet capture. Which bits are set in which BPDUs?
+2) Start a packet capture and then enable the SW3-SW4 link.
+- Analyze the debug messages shown on SW3 and SW4. 
+- Analyze the packet capture.
+3) Start a packet capture and then enable the SW1-SW3 link.
+- Analyze the debug messages shown on SW1 and SW3.
+- Analyze the packet capture.
+- What activity was there on the SW3-SW4 link? 
+4) Start a packet capture and then enable the SW2-SW4 link.
+- Analyze the debug messages shown on SW2 and SW4. 
+- Analyze the packet capture.

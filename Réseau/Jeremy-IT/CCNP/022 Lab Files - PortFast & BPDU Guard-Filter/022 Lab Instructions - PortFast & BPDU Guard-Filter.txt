@@ -1,0 +1,10 @@
+# Lab Instructions #
+1) Enable PortFast where appropriate.
+- Test that PortFast is working.
+2) Enable BPDU Guard where appropriate.
+- Test that BPDU Guard is working.
+- Enable ErrDisable Recovery for ports disabled by BPDU Guard.
+3) Disable BPDU Guard on SW3, and enable BPDU Filter instead.
+- Test how it works when enabled globally
+- Test how it works when enabled directly on interfaces
+4) Use BPDU Filter to cause a broadcast storm

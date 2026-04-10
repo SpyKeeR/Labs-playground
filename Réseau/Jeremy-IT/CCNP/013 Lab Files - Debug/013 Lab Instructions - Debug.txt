@@ -1,0 +1,18 @@
+# IP Info #
+- Router connections are 192.168.XX.0/24 (R1-R2 segment is 192.168.12.0/24, R1-R3 segment is 192.168.13.0/24)
+- Router IP addresses are .X (R1 IPs are .1, R2 is .2, R3 is .3)
+- R1-PC1 is 192.168.1.0/24 (PC1 is .10)
+- R1-PC2 is 192.168.2.0/24 (PC2 is .10)
+
+# Lab Instructions #
+1) Debug process-switched packets on R1. Send pings between R1, PC1, and PC2. Which pings produce debug output?
+- Configure R1 so that it displays output for all ping messages.
+- Disable the debug.
+2) Enable a detailed debug of process-switched ICMP packets from PC1 to PC2 only (not PC2 to PC1 or any messages to/from R1).
+- Confirm with a ping between PC1 and PC2.
+- Disable the debug.
+3) Enable OSPF on R1, R2, and R3. R1 won't be able to reach a FULL adjacency with R2 or R3.
+- Use 'debug' commands only to troubleshoot and then fix the configurations.
+- Set debug conditions to limit debug output and only troubleshoot one connection at a time (R2, then R3).
+- Note: 'debug ip ospf adj' alone won't be sufficient.
+- Remove all debugs and conditions after you have fixed the issues.

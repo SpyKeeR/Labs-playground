@@ -1,0 +1,132 @@
+Building configuration...
+
+Current configuration : 1472 bytes
+!
+! Last configuration change at 00:35:07 UTC Sat Sep 23 2023
+!
+version 15.9
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+logging console
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+redundancy
+!
+no cdp run
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/0.1
+ encapsulation dot1Q 1
+ ip address 10.0.1.1 255.255.255.0
+ no cdp enable
+!
+interface GigabitEthernet0/0.2
+ encapsulation dot1Q 2
+ ip address 10.0.2.1 255.255.255.0
+ no cdp enable
+!
+interface GigabitEthernet0/0.999
+ encapsulation dot1Q 999 native
+ no cdp enable
+!
+interface GigabitEthernet0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/2
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+interface GigabitEthernet0/3
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+ media-type rj45
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ logging synchronous
+ transport preferred none
+ privilege level 15
+line aux 0
+line vty 0 4
+ exec-timeout 0 0
+ login
+ transport input none
+!
+no scheduler allocate
+!
+end

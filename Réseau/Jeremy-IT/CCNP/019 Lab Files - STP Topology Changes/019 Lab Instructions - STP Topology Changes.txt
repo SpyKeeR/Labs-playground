@@ -1,0 +1,20 @@
+# Lab Instructions #
+- Determine the STP topology and then proceed with the following steps. Use 'debug spanning-tree events'.
+1) Confirm the path taken by communications between PC1 (192.168.1.1) and PC2 (192.168.1.2).
+2) Disable the SW1-SW2 link.
+- Verify that SW3 rapidly ages out its entry for PC2's MAC address (and SW4 ages out its entry for PC1).
+- Re-enable the link
+3) Disable the SW3-SW4 link.
+- Initiate a packet capture on the appropriate link beforehand to verify the TCA.
+- Which switch/switches send a TCN?
+- Confirm that the Root bridge is setting the TC flag on Configuration BPDUs.
+- How long does it take for STP to reconverge?
+- Re-enable the link.
+4) Disable the SW2-SW4 link.
+- Which switch/switches send a TCN?
+- How long does it take for STP to reconverge?
+- Re-enable the link.
+5) Disable the SW1-SW3 link.
+- Which switch/switches send a TCN?
+- How long does it take for STP to reconverge?
+- Re-enable the link.

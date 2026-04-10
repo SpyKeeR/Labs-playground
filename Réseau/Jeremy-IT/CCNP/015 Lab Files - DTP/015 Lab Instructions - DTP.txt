@@ -1,0 +1,10 @@
+# Lab Instructions #
+1) Use "show interfaces <interface> switchport" and "show dtp interface <interface>" to confirm the results of combining the following configuration modes between SW1 and SW2:
+- access
+- trunk
+- trunk (nonegotiate)
+- dynamic auto
+- dynamic desirable
+2) What trunking encapsulation is used for SW1's connection to PC1?
+3) Examine the DTP frames sent between SW1 and SW2. Which VLAN are they sent in when using DOT1Q? When using ISL? Change the native VLAN and examine the results.
+4) Examine the DTP frames sent from SW1 to PC1. What VLAN are they sent in?

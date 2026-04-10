@@ -1,0 +1,15 @@
+# IP Info #
+- R1-R2-R3 LAN: 192.168.123.0/24 (R1 = .1, R2 = .2, R3 = .3, PC1 = .10)
+- R2-R4: 192.168.24.0/24 (R2 = .2, R4 = .4)
+- R4 LAN: 192.168.4.0/24 (R4 = .4, SRV1 = .10)
+
+# Lab Instructions #
+*These steps are not done in order from 1) to 3), but simultaneously.
+1) Use pings & traceroutes from PC1 & R3 to SRV1 to generate the following ICMP messages:
+- Redirect
+- Destination Unreachable
+- Time Exceeded
+- Echo Request
+- Echo Reply
+2) Perform packet captures on the appropriate links and examine each ICMP message type.
+3) Also, use a debug command on R3 and examine the output shown for each ICMP message type.

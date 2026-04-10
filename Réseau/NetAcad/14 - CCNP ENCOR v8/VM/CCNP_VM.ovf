@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<Envelope ovf:version="2.0" xml:lang="en-US" xmlns="http://schemas.dmtf.org/ovf/envelope/2" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/2" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:vbox="http://www.virtualbox.org/ovf/machine" xmlns:epasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_EthernetPortAllocationSettingData.xsd" xmlns:sasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_StorageAllocationSettingData.xsd">
+  <References>
+    <File ovf:id="file1" ovf:href="CCNP_VM-disk001.vmdk"/>
+  </References>
+  <DiskSection>
+    <Info>List of the virtual disks used in the package</Info>
+    <Disk ovf:capacity="10737418240" ovf:diskId="vmdisk1" ovf:fileRef="file1" ovf:format="http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized" vbox:uuid="3cf00a71-ea3c-4d2e-8b5f-d7f0dac4f0bc"/>
+  </DiskSection>
+  <NetworkSection>
+    <Info>Logical networks used in the package</Info>
+  </NetworkSection>
+  <VirtualSystem ovf:id="CCNP_VM">
+    <Info>A virtual machine</Info>
+    <OperatingSystemSection ovf:id="94">
+      <Info>The kind of installed guest operating system</Info>
+      <Description>Ubuntu_64</Description>
+      <vbox:OSType ovf:required="false">Ubuntu_64</vbox:OSType>
+    </OperatingSystemSection>
+    <VirtualHardwareSection>
+      <Info>Virtual hardware requirements for a virtual machine</Info>
+      <System>
+        <vssd:ElementName>Virtual Hardware Family</vssd:ElementName>
+        <vssd:InstanceID>0</vssd:InstanceID>
+        <vssd:VirtualSystemIdentifier>CCNP_VM</vssd:VirtualSystemIdentifier>
+        <vssd:VirtualSystemType>vmx-21</vssd:VirtualSystemType>
+      </System>
+      <Item>
+        <rasd:Caption>1 virtual CPU</rasd:Caption>
+        <rasd:Description>Number of virtual CPUs</rasd:Description>
+        <rasd:InstanceID>1</rasd:InstanceID>
+        <rasd:ResourceType>3</rasd:ResourceType>
+        <rasd:VirtualQuantity>1</rasd:VirtualQuantity>
+      </Item>
+      <Item>
+        <rasd:AllocationUnits>MegaBytes</rasd:AllocationUnits>
+        <rasd:Caption>2048 MB of memory</rasd:Caption>
+        <rasd:Description>Memory Size</rasd:Description>
+        <rasd:InstanceID>2</rasd:InstanceID>
+        <rasd:ResourceType>4</rasd:ResourceType>
+        <rasd:VirtualQuantity>2048</rasd:VirtualQuantity>
+      </Item>
+	  <Item>
+		<rasd:Address>0</rasd:Address>
+		<rasd:Caption>SCSIController</rasd:Caption>
+		<rasd:Description>SCSI Controller</rasd:Description>
+		<rasd:ElementName>SCSIController</rasd:ElementName>
+		<rasd:InstanceID>5</rasd:InstanceID>
+		<rasd:ResourceSubType>lsilogic</rasd:ResourceSubType>
+		<rasd:ResourceType>6</rasd:ResourceType>
+	</Item>
+    </VirtualHardwareSection>
+    <vbox:Machine ovf:required="false" version="1.16-windows" uuid="{6db15a02-dc62-4928-9dba-2d264c8698b5}" name="CCNP_VM" OSType="Ubuntu_64" snapshotFolder="Snapshots" lastStateChange="2020-03-13T06:41:32Z">
+      <ovf:Info>Complete VirtualBox machine configuration in VirtualBox format</ovf:Info>
+      <ExtraData>
+        <ExtraDataItem name="GUI/LastCloseAction" value="PowerOff"/>
+        <ExtraDataItem name="GUI/LastGuestSizeHint" value="1288,876"/>
+        <ExtraDataItem name="GUI/LastNormalWindowPosition" value="2382,110,800,642"/>
+      </ExtraData>
+      <Hardware>
+        <CPU>
+          <PAE enabled="true"/>
+          <LongMode enabled="true"/>
+          <X2APIC enabled="true"/>
+          <HardwareVirtExLargePages enabled="true"/>
+        </CPU>
+        <Memory RAMSize="2048"/>
+        <Display VRAMSize="16"/>
+        <VideoCapture screens="1" file="." fps="25"/>
+        <BIOS>
+          <IOAPIC enabled="true"/>
+          <SmbiosUuidLittleEndian enabled="true"/>
+        </BIOS>
+        <Network>
+          <Adapter slot="0" enabled="true" type="82540EM">
+            <DisabledModes>
+              <InternalNetwork name="intnet"/>
+              <NATNetwork name="NatNetwork"/>
+            </DisabledModes>
+            <BridgedInterface name="Intel(R) Ethernet Connection (4) I219-LM"/>
+          </Adapter>
+        </Network>
+        <AudioAdapter driver="DirectSound" enabled="true" enabledIn="false" enabledOut="false"/>
+        <Clipboard/>
+        <GuestProperties>
+          <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1584080227617886900" flags=""/>
+        </GuestProperties>
+      </Hardware>
+      <StorageControllers>
+        <StorageController name="IDE" type="PIIX4" PortCount="2" useHostIOCache="true" Bootable="true"/>
+        <StorageController name="SCSI" type="LsiLogic" PortCount="16" useHostIOCache="false" Bootable="true">
+          <AttachedDevice type="HardDisk" hotpluggable="false" port="0" device="0">
+            <Image uuid="{3cf00a71-ea3c-4d2e-8b5f-d7f0dac4f0bc}"/>
+          </AttachedDevice>
+        </StorageController>
+        <StorageController name="Floppy" type="I82078" PortCount="1" useHostIOCache="true" Bootable="true">
+          <AttachedDevice type="Floppy" hotpluggable="false" port="0" device="0"/>
+        </StorageController>
+      </StorageControllers>
+    </vbox:Machine>
+  </VirtualSystem>
+</Envelope>

@@ -1,0 +1,13 @@
+# Lab Instructions #
+1) Disable SW3 G0/0 to simulate a failure on the SW1-SW3 link.
+- How long does it take for SW3 G0/1 to move to the Forwarding state?
+2) Re-enable SW3 G0/0, enable UplinkFast on the appropriate switch(es), and disable SW3 G0/0 again.
+- How long does it take for SW3 G0/1 to move to the Forwarding state?
+3) Re-enable SW3 G0/0.
+- How long does it take for G0/0 to become the Root port?
+4) Disable SW2 G0/0 to simulate a failure on the SW1-SW2 link.
+- How long does it take for SW3 G0/1 to become a Designated port in the Forwarding state?
+5) Re-enable SW2 G0/0, enable BackboneFast on the appropriate switch(es), and disable SW2 G0/0 again.
+- How long does it take for SW3 G0/1 to become a Designated port in the Forwarding state?
+6) Re-enable SW2 G0/0.
+- How long does it take for G0/0 to move to the Forwarding state?

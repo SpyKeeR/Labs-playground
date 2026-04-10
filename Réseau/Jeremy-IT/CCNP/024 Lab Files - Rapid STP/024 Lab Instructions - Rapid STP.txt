@@ -1,0 +1,6 @@
+# Lab Instructions #
+1) Without using the CLI, determine the STP topology of the LAN.
+- Use the CLI to confirm your answers afterward.
+2) Configure the switches to use the long cost values.
+- Does the STP topology change?
+3) Manually configure each interface's link-type to match its default value.

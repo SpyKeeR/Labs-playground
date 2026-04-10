@@ -1,0 +1,1484 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 6045 bytes\n\
+          !\n! Last configuration change at 16:01:20 UTC Thu Mar 26 2026 by raduser\n\
+          !\nversion 17.3\nservice timestamps debug datetime msec\nservice timestamps\
+          \ log datetime msec\n! Call-home is enabled by Smart-Licensing.\nservice\
+          \ call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+          \ disable-kernel-core\nplatform console serial\n!\nhostname R1\n!\nboot-start-marker\n\
+          boot-end-marker\n!\n!\nno logging console\nenable secret 9 $9$tJE7A7h6Fm1pAU$pn4P.PRo/QnHHxjpAiBzgT1adThemXiZ6x29ZXhmqSE\n\
+          !\naaa new-model\n!\n!\naaa authentication login default group radius local\n\
+          !\n!\n!\n!\n!\n!\naaa session-id common\n!\n!\n!\n!\n!\n!\n!\nno ip domain\
+          \ lookup\n!\n!\n!\nlogin on-success log\nipv6 unicast-routing\n!\n!\n!\n\
+          !\n!\n!\n!\nsubscriber templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name\
+          \ authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki\
+          \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n\
+          !\n!\ncrypto pki certificate chain SLA-TrustPoint\n certificate ca 01\n\
+          \  30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n\
+          \  32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363\n\
+          \  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n\
+          \  3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n\
+          \  43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n\
+          \  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n\
+          \  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n\
+          \  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n\
+          \  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n\
+          \  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n\
+          \  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n\
+          \  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n\
+          \  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n\
+          \  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n\
+          \  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n\
+          \  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n\
+          \  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n\
+          \  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n\
+          \  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n\
+          \  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n\
+          \  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n\
+          \  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n\
+          \  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n\
+          \  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n\
+          \  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n\
+          \  D697DF7F 28\n  \tquit\n!\nlicense udi pid CSR1000V sn 9BPSHGGDELW\ndiagnostic\
+          \ bootup level minimal\nmemory free low-watermark processor 71464\n!\n!\n\
+          spanning-tree extend system-id\n!\nusername sadmin privilege 15 secret 9\
+          \ $9$ltd6YKOq94ep/.$qEMoGPh2nV/yp6e3tie9SJKNtYviEU02.xHfexXy516\n!\nredundancy\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\ninterface GigabitEthernet1\n ip address 209.165.200.225 255.255.255.224\n\
+          \ negotiation auto\n ipv6 address FE80::1:1 link-local\n ipv6 address 2001:DB8:200::1/64\n\
+          \ no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet2\n ip address\
+          \ 10.0.10.1 255.255.255.0\n ip ospf 4 area 0\n negotiation auto\n ipv6 address\
+          \ FE80::1:2 link-local\n ipv6 address 2001:DB8:100:1010::1/64\n ipv6 ospf\
+          \ 6 area 0\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet3\n\
+          \ ip address 10.0.13.1 255.255.255.0\n ip ospf 4 area 0\n negotiation auto\n\
+          \ ipv6 address FE80::1:3 link-local\n ipv6 address 2001:DB8:100:1013::1/64\n\
+          \ ipv6 ospf 6 area 0\n no mop enabled\n no mop sysid\n!\nrouter ospf 4\n\
+          \ router-id 0.0.4.1\n default-information originate\n!\nrouter bgp 300\n\
+          \ bgp router-id 1.1.1.1\n bgp log-neighbor-changes\n neighbor 2001:DB8:200::2\
+          \ remote-as 500\n neighbor 209.165.200.226 remote-as 500\n !\n address-family\
+          \ ipv4\n  network 10.0.0.0\n  no neighbor 2001:DB8:200::2 activate\n  neighbor\
+          \ 209.165.200.226 activate\n exit-address-family\n !\n address-family ipv6\n\
+          \  network 2001:DB8:100::/48\n  neighbor 2001:DB8:200::2 activate\n exit-address-family\n\
+          !\nip forward-protocol nd\nno ip http server\nip http secure-server\n!\n\
+          ip route 10.0.0.0 255.0.0.0 Null0\n!\nip access-list standard NMS-SERVER\n\
+          \ 10 permit 10.100.0.5\n!\n!\nlogging trap warnings\nlogging host 10.0.100.5\n\
+          ipv6 route 2001:DB8:100::/48 Null0\nipv6 router ospf 6\n summary-prefix\
+          \ 2001:DB8:100::/48\n router-id 0.0.6.1\n default-information originate\n\
+          !\n!\n!\nsnmp-server community ENCORSA RO NMS-SERVER\nsnmp-server contact\
+          \ Maxime - SpyKeeR\nsnmp-server enable traps ospf state-change\nsnmp-server\
+          \ enable traps ospf errors\nsnmp-server enable traps ospf retransmit\nsnmp-server\
+          \ enable traps ospf lsa\nsnmp-server enable traps ospf cisco-specific state-change\
+          \ nssa-trans-change\nsnmp-server enable traps ospf cisco-specific state-change\
+          \ shamlink interface\nsnmp-server enable traps ospf cisco-specific state-change\
+          \ shamlink neighbor\nsnmp-server enable traps ospf cisco-specific errors\n\
+          snmp-server enable traps ospf cisco-specific retransmit\nsnmp-server enable\
+          \ traps ospf cisco-specific lsa\nsnmp-server enable traps bgp\nsnmp-server\
+          \ enable traps config\nsnmp-server host 10.0.100.5 version 2c ENCORSA\n\
+          snmp ifmib ifindex persist\n!\n!\n!\n!\nradius server RADIUS\n address ipv4\
+          \ 10.0.100.5 auth-port 1812 acct-port 1813\n key $trongPass\n!\n!\ncontrol-plane\n\
+          !\n!\n!\n!\n!\nbanner motd ^C R1, ENCOR Skills Assessment, Scenario 1 ^C\n\
+          !\nline con 0\n exec-timeout 0 0\n logging synchronous\n stopbits 1\nline\
+          \ vty 0 4\n exec-timeout 0 0\n transport input ssh\n!\ncall-home\n ! If\
+          \ contact email address in call-home is configured as sch-smart-licensing@cisco.com\n\
+          \ ! the email address configured in Cisco Smart License Portal will be used\
+          \ as contact email address to send SCH notifications.\n contact-email-addr\
+          \ sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n  active\n  destination\
+          \ transport-method http\nntp server 209.165.200.226\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: -160
+    y: 40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 5353 bytes\n\
+          !\n! Last configuration change at 16:01:20 UTC Thu Mar 26 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\n! Call-home is enabled by Smart-Licensing.\nservice call-home\n\
+          platform qfp utilization monitor load 80\nplatform punt-keepalive disable-kernel-core\n\
+          platform console serial\n!\nhostname R3\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nenable secret 9 $9$ImbhNRa9FO1iwU$9Rl9B/JIyufdV0suXuBukkswNoQ.u2wnjWn/i/a5FPI\n\
+          !\naaa new-model\n!\n!\naaa authentication login default group radius local\n\
+          !\n!\n!\n!\n!\n!\naaa session-id common\n!\n!\n!\n!\n!\n!\n!\nno ip domain\
+          \ lookup\n!\n!\n!\nlogin on-success log\nipv6 unicast-routing\n!\n!\n!\n\
+          !\n!\n!\n!\nsubscriber templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name\
+          \ authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki\
+          \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n\
+          !\n!\ncrypto pki certificate chain SLA-TrustPoint\n certificate ca 01\n\
+          \  30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n\
+          \  32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363\n\
+          \  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n\
+          \  3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n\
+          \  43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n\
+          \  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n\
+          \  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n\
+          \  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n\
+          \  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n\
+          \  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n\
+          \  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n\
+          \  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n\
+          \  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n\
+          \  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n\
+          \  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n\
+          \  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n\
+          \  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n\
+          \  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n\
+          \  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n\
+          \  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n\
+          \  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n\
+          \  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n\
+          \  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n\
+          \  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n\
+          \  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n\
+          \  D697DF7F 28\n  \tquit\n!\nlicense udi pid CSR1000V sn 9P8P76DK0XD\ndiagnostic\
+          \ bootup level minimal\nmemory free low-watermark processor 71464\n!\n!\n\
+          spanning-tree extend system-id\n!\nusername sadmin privilege 15 secret 9\
+          \ $9$kTiSBtCGWmNkNE$llwpykXAvqkEcvOWZKoEigYp15z4hdW7go7aRXXtc.I\n!\nredundancy\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\ninterface GigabitEthernet1\n no ip address\n shutdown\n negotiation auto\n\
+          \ no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet2\n ip address\
+          \ 10.0.11.1 255.255.255.0\n ip ospf 4 area 0\n negotiation auto\n ipv6 address\
+          \ FE80::3:2 link-local\n ipv6 address 2001:DB8:100:1011::1/64\n ipv6 ospf\
+          \ 6 area 0\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet3\n\
+          \ ip address 10.0.13.3 255.255.255.0\n ip ospf 4 area 0\n negotiation auto\n\
+          \ ipv6 address FE80::3:3 link-local\n ipv6 address 2001:DB8:100:1010::2/64\n\
+          \ ipv6 ospf 6 area 0\n no mop enabled\n no mop sysid\n!\nrouter ospf 4\n\
+          \ router-id 0.0.4.3\n!\nip forward-protocol nd\nno ip http server\nip http\
+          \ secure-server\n!\n!\nip access-list standard NMS-SERVER\n 10 permit 10.0.100.5\n\
+          !\n!\nlogging trap warnings\nlogging host 10.0.100.5\nipv6 router ospf 6\n\
+          \ router-id 0.0.6.3\n!\n!\n!\nsnmp-server community ENCORSA RO NMS-SERVER\n\
+          snmp-server contact Maxime - SpyKeeR\nsnmp-server enable traps ospf state-change\n\
+          snmp-server enable traps ospf errors\nsnmp-server enable traps ospf retransmit\n\
+          snmp-server enable traps ospf lsa\nsnmp-server enable traps ospf cisco-specific\
+          \ state-change nssa-trans-change\nsnmp-server enable traps ospf cisco-specific\
+          \ state-change shamlink interface\nsnmp-server enable traps ospf cisco-specific\
+          \ state-change shamlink neighbor\nsnmp-server enable traps ospf cisco-specific\
+          \ errors\nsnmp-server enable traps ospf cisco-specific retransmit\nsnmp-server\
+          \ enable traps ospf cisco-specific lsa\nsnmp-server enable traps config\n\
+          snmp-server host 10.0.100.5 version 2c ENCORSA\nsnmp ifmib ifindex persist\n\
+          !\n!\n!\n!\nradius server RADIUS\n address ipv4 10.0.100.5 auth-port 1812\
+          \ acct-port 1813\n key $trongPass\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\n\
+          banner motd ^C R3, ENCOR Skills Assessment, Scenario 1 ^C\n!\nline con 0\n\
+          \ exec-timeout 0 0\n logging synchronous\n stopbits 1\nline vty 0 4\n exec-timeout\
+          \ 0 0\n transport input ssh\n!\ncall-home\n ! If contact email address in\
+          \ call-home is configured as sch-smart-licensing@cisco.com\n ! the email\
+          \ address configured in Cisco Smart License Portal will be used as contact\
+          \ email address to send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+          \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n\
+          ntp server 10.0.13.1\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: R3
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 80
+    y: 40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 4660 bytes\n\
+          !\n! Last configuration change at 16:01:20 UTC Thu Mar 26 2026\n! NVRAM\
+          \ config last updated at 16:00:58 UTC Thu Mar 26 2026\n!\nversion 17.3\n\
+          service timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\n! Call-home is enabled by Smart-Licensing.\nservice call-home\n\
+          platform qfp utilization monitor load 80\nplatform punt-keepalive disable-kernel-core\n\
+          platform console serial\n!\nhostname R2\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nenable secret 9 $9$4LfzzgUr3nMVuU$yFje1cB5gvnL.2XLViFq10BlBeKZd2472qELQgqaQdo\n\
+          !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\n!\n!\n!\n\
+          login on-success log\nipv6 unicast-routing\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+          \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n\
+          \ enrollment pkcs12\n revocation-check crl\n!\n!\ncrypto pki certificate\
+          \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201\
+          \ 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305\
+          \ 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720\
+          \ 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330\
+          \ 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355\
+          \ 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230\
+          \ 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96\
+          \ 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7\
+          \ 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715\
+          \ B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18\
+          \ FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5\
+          \ DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7\
+          \ AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D\
+          \ C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327\
+          \ A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100\
+          \ 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04\
+          \ 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333\
+          \ 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66\
+          \ 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E\
+          \ CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2\
+          \ 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D\
+          \ CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7\
+          \ B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E\
+          \ 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9\
+          \ 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75\
+          \ 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n\
+          !\nlicense udi pid CSR1000V sn 9W9TL3BUMIX\ndiagnostic bootup level minimal\n\
+          memory free low-watermark processor 71464\n!\n!\nspanning-tree extend system-id\n\
+          !\nusername sadmin privilege 15 secret 9 $9$bzhMVygO9FYSQU$.DIfu3QoSzPo4qM.wngU2vYQlSKZIKqFwXQxcxdYr7Y\n\
+          !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 2.2.2.2 255.255.255.255\n\
+          \ ipv6 address FE80::2:3 link-local\n ipv6 address 2001:DB8:2222::1/128\n\
+          !\ninterface GigabitEthernet1\n ip address 209.165.200.226 255.255.255.224\n\
+          \ negotiation auto\n ipv6 address FE80::2:1 link-local\n ipv6 address 2001:DB8:200::2/64\n\
+          \ no mop enabled\n no mop sysid\n!\nrouter bgp 500\n bgp router-id 2.2.2.2\n\
+          \ bgp log-neighbor-changes\n neighbor 2001:DB8:200::1 remote-as 300\n neighbor\
+          \ 209.165.200.225 remote-as 300\n !\n address-family ipv4\n  network 0.0.0.0\n\
+          \  network 2.2.2.2 mask 255.255.255.255\n  no neighbor 2001:DB8:200::1 activate\n\
+          \  neighbor 209.165.200.225 activate\n  default-information originate\n\
+          \ exit-address-family\n !\n address-family ipv6\n  default-information originate\n\
+          \  network ::/0\n  network 2001:DB8:2222::1/128\n  neighbor 2001:DB8:200::1\
+          \ activate\n exit-address-family\n!\nip forward-protocol nd\nno ip http\
+          \ server\nip http secure-server\n!\nip route 0.0.0.0 0.0.0.0 Loopback0\n\
+          !\n!\nipv6 route ::/0 Loopback0\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n\
+          !\n!\nbanner motd ^C R2, ENCOR Skills Assessment, Scenario 1 ^C\n!\nline\
+          \ con 0\n exec-timeout 0 0\n logging synchronous\n stopbits 1\nline vty\
+          \ 0 4\n exec-timeout 0 0\n login\n transport input ssh\n!\ncall-home\n !\
+          \ If contact email address in call-home is configured as sch-smart-licensing@cisco.com\n\
+          \ ! the email address configured in Cisco Smart License Portal will be used\
+          \ as contact email address to send SCH notifications.\n contact-email-addr\
+          \ sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n  active\n  destination\
+          \ transport-method http\nntp master 3\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: R2
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: -40
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 7608 bytes
+          !
+          ! Last configuration change at 16:01:15 UTC Thu Mar 26 2026 by raduser
+          !
+          version 15.2
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          no service password-encryption
+          service compress-config
+          !
+          hostname D1
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          enable secret 9 $9$tcVYyyyXUmlwpP$FaBaqcRjN8T2t0mDgfeS.w6GBJHfCXHSfbM0igJs8SI
+          !
+          username sadmin privilege 15 secret 9 $9$dIXleTq1f.ZPk9$NLOy34nVEMa/AADDKDSCe6tLAvV0HAOjge8F5DLdLgk
+          aaa new-model
+          !
+          !
+          aaa authentication login default group radius local
+          !
+          !
+          !
+          !
+          !
+          !
+          aaa session-id common
+          !
+          !
+          !
+          !
+          !
+          !
+          ip dhcp excluded-address 10.0.101.1 10.0.101.109
+          ip dhcp excluded-address 10.0.101.141 10.0.101.254
+          ip dhcp excluded-address 10.0.102.1 10.0.102.109
+          ip dhcp excluded-address 10.0.102.141 10.0.102.254
+          !
+          ip dhcp pool VLAN-101
+           network 10.0.101.0 255.255.255.0
+           default-router 10.0.101.254
+          !
+          ip dhcp pool VLAN-102
+           network 10.0.102.0 255.255.255.0
+           default-router 10.0.102.254
+          !
+          !
+          no ip domain-lookup
+          ip cef
+          ipv6 unicast-routing
+          ipv6 cef
+          !
+          !
+          !
+          spanning-tree mode rapid-pvst
+          spanning-tree extend system-id
+          spanning-tree vlan 100,102 priority 24576
+          spanning-tree vlan 101 priority 28672
+          !
+          !
+          track 4 ip sla 4
+           delay down 15 up 10
+          !
+          track 6 ip sla 6
+           delay down 15 up 10
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface Port-channel1
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+          !
+          interface Port-channel12
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+          !
+          interface GigabitEthernet0/0
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 12 mode active
+          !
+          interface GigabitEthernet0/1
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 12 mode active
+          !
+          interface GigabitEthernet0/2
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 12 mode active
+          !
+          interface GigabitEthernet0/3
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 12 mode active
+          !
+          interface GigabitEthernet1/0
+           no switchport
+           ip address 10.0.10.2 255.255.255.0
+           ip ospf 4 area 0
+           negotiation auto
+           ipv6 address FE80::D1:1 link-local
+           ipv6 address 2001:DB8:100:1010::2/64
+           ipv6 ospf 6 area 0
+          !
+          interface GigabitEthernet1/1
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet1/2
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet1/3
+           switchport access vlan 100
+           switchport mode access
+           negotiation auto
+           spanning-tree portfast edge
+          !
+          interface Vlan100
+           ip address 10.0.100.1 255.255.255.0
+           standby version 2
+           standby 104 ip 10.0.100.254
+           standby 104 priority 150
+           standby 104 preempt
+           standby 104 track 4 decrement 60
+           standby 106 ipv6 FE80::100:1
+           standby 106 priority 150
+           standby 106 preempt
+           standby 106 track 6 decrement 60
+           ip ospf 4 area 0
+           ipv6 address FE80::D1:2 link-local
+           ipv6 address 2001:DB8:100:100::1/64
+           ipv6 ospf 6 area 0
+          !
+          interface Vlan101
+           ip address 10.0.101.1 255.255.255.0
+           standby version 2
+           standby 114 ip 10.0.101.254
+           standby 114 preempt
+           standby 114 track 4 decrement 60
+           standby 116 ipv6 FE80::101:1
+           standby 116 preempt
+           standby 116 track 6 decrement 60
+           ip ospf 4 area 0
+           ipv6 address FE80::D1:3 link-local
+           ipv6 address 2001:DB8:100:101::1/64
+           ipv6 ospf 6 area 0
+          !
+          interface Vlan102
+           ip address 10.0.102.1 255.255.255.0
+           standby version 2
+           standby 124 ip 10.0.102.254
+           standby 124 priority 150
+           standby 124 preempt
+           standby 124 track 4 decrement 60
+           standby 126 ipv6 FE80::102:1
+           standby 126 priority 150
+           standby 126 preempt
+           standby 126 track 6 decrement 60
+           ip ospf 4 area 0
+           ipv6 address FE80::D1:4 link-local
+           ipv6 address 2001:DB8:100:102::1/64
+           ipv6 ospf 6 area 0
+          !
+          router ospf 4
+           router-id 0.0.4.131
+           passive-interface default
+           no passive-interface GigabitEthernet1/0
+          !
+          ip forward-protocol nd
+          !
+          ip http server
+          ip http secure-server
+          !
+          ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          !
+          ip access-list standard NMS-SERVER
+           permit 10.0.100.5
+          !
+          !
+          ip sla 4
+           icmp-echo 10.0.10.1
+           frequency 5
+          ip sla schedule 4 life forever start-time now
+          ip sla 6
+           icmp-echo 2001:DB8:100:1010::1
+           frequency 5
+          ip sla schedule 6 life forever start-time now
+          logging trap warnings
+          logging host 10.0.100.5
+          ipv6 router ospf 6
+           router-id 0.0.6.131
+           passive-interface default
+           no passive-interface GigabitEthernet1/0
+          !
+          !
+          !
+          !
+          snmp-server community ENCORSA RO NMS-SERVER
+          snmp-server contact Maxime - SpyKeeR
+          snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+          snmp-server enable traps ospf state-change
+          snmp-server enable traps ospf errors
+          snmp-server enable traps ospf retransmit
+          snmp-server enable traps ospf lsa
+          snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+          snmp-server enable traps ospf cisco-specific state-change shamlink interface
+          snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+          snmp-server enable traps ospf cisco-specific errors
+          snmp-server enable traps ospf cisco-specific retransmit
+          snmp-server enable traps ospf cisco-specific lsa
+          snmp-server host 10.0.100.5 version 2c ENCORSA
+          snmp ifmib ifindex persist
+          !
+          !
+          radius server RADIUS
+           address ipv4 10.0.100.5 auth-port 1812 acct-port 1813
+           key $trongPass
+          !
+          !
+          control-plane
+          !
+          banner exec ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner incoming ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner login ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner motd ^C D1, ENCOR Skills Assessment, Scenario 1 ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+          !
+          ntp server 10.0.10.1
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: D1
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: -280
+    y: 120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: GigabitEthernet1/0
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: GigabitEthernet1/1
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: GigabitEthernet1/2
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: GigabitEthernet1/3
+        mac_address: null
+        type: physical
+        slot: 7
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 7532 bytes
+          !
+          ! Last configuration change at 16:01:17 UTC Thu Mar 26 2026
+          !
+          version 15.2
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          no service password-encryption
+          service compress-config
+          !
+          hostname D2
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          enable secret 9 $9$LcoFTuguRhcxzP$RaC29yvRd6fjTdG8C6kMZulBQ9z2FlhNhwFFrCWtMNw
+          !
+          username sadmin privilege 15 secret 9 $9$VIUosWAd/eH429$s/Q97WL9q534CnEuO5FxqYezgoc4WU3u7kHSLl79Ytk
+          aaa new-model
+          !
+          !
+          aaa authentication login default group radius local
+          !
+          !
+          !
+          !
+          !
+          !
+          aaa session-id common
+          !
+          !
+          !
+          !
+          !
+          !
+          ip dhcp excluded-address 10.0.101.1 10.0.101.209
+          ip dhcp excluded-address 10.0.101.254
+          ip dhcp excluded-address 10.0.102.1 10.0.102.209
+          ip dhcp excluded-address 10.0.102.241 10.0.102.254
+          !
+          ip dhcp pool VLAN-101
+           network 10.0.101.0 255.255.255.0
+           default-router 10.0.101.254
+          !
+          ip dhcp pool VLAN-102
+           network 10.0.102.0 255.255.255.0
+           default-router 10.0.102.254
+          !
+          !
+          no ip domain-lookup
+          ip cef
+          ipv6 unicast-routing
+          ipv6 cef
+          !
+          !
+          !
+          spanning-tree mode rapid-pvst
+          spanning-tree extend system-id
+          spanning-tree vlan 100,102 priority 28672
+          spanning-tree vlan 101 priority 24576
+          !
+          !
+          track 4 ip sla 4
+           delay down 15 up 10
+          !
+          track 6 ip sla 6
+           delay down 15 up 10
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface Port-channel2
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+          !
+          interface Port-channel12
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+          !
+          interface GigabitEthernet0/0
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 12 mode active
+          !
+          interface GigabitEthernet0/1
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 12 mode active
+          !
+          interface GigabitEthernet0/2
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 12 mode active
+          !
+          interface GigabitEthernet0/3
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 12 mode active
+          !
+          interface GigabitEthernet1/0
+           no switchport
+           ip address 10.0.11.2 255.255.255.0
+           ip ospf 4 area 0
+           negotiation auto
+           ipv6 address FE80::D1:1 link-local
+           ipv6 address 2001:DB8:100:1011::2/64
+           ipv6 ospf 6 area 0
+          !
+          interface GigabitEthernet1/1
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 2 mode active
+          !
+          interface GigabitEthernet1/2
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 2 mode active
+          !
+          interface GigabitEthernet1/3
+           switchport access vlan 102
+           switchport mode access
+           negotiation auto
+           spanning-tree portfast edge
+          !
+          interface Vlan100
+           ip address 10.0.100.2 255.255.255.0
+           standby version 2
+           standby 104 ip 10.0.100.254
+           standby 104 preempt
+           standby 104 track 4 decrement 60
+           standby 106 ipv6 FE80::100:1
+           standby 106 preempt
+           standby 106 track 6 decrement 60
+           ip ospf 4 area 0
+           ipv6 address FE80::D2:2 link-local
+           ipv6 address 2001:DB8:100:100::2/64
+           ipv6 ospf 6 area 0
+          !
+          interface Vlan101
+           ip address 10.0.101.2 255.255.255.0
+           standby version 2
+           standby 114 ip 10.0.101.254
+           standby 114 priority 150
+           standby 114 preempt
+           standby 114 track 4 decrement 60
+           standby 116 ipv6 FE80::101:1
+           standby 116 priority 150
+           standby 116 preempt
+           standby 116 track 6 decrement 60
+           ip ospf 4 area 0
+           ipv6 address FE80::D2:3 link-local
+           ipv6 address 2001:DB8:100:101::2/64
+           ipv6 ospf 6 area 0
+          !
+          interface Vlan102
+           ip address 10.0.102.2 255.255.255.0
+           standby version 2
+           standby 124 ip 10.0.102.254
+           standby 124 preempt
+           standby 124 track 4 decrement 60
+           standby 126 ipv6 FE80::102:1
+           standby 126 preempt
+           standby 126 track 6 decrement 60
+           ip ospf 4 area 0
+           ipv6 address FE80::D2:4 link-local
+           ipv6 address 2001:DB8:100:102::2/64
+           ipv6 ospf 6 area 0
+          !
+          router ospf 4
+           router-id 0.0.4.132
+           passive-interface default
+           no passive-interface GigabitEthernet1/0
+          !
+          ip forward-protocol nd
+          !
+          ip http server
+          ip http secure-server
+          !
+          ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          !
+          ip access-list standard NMS-SERVER
+           permit 10.0.100.5
+          !
+          !
+          ip sla 4
+           icmp-echo 10.0.11.1
+           frequency 5
+          ip sla schedule 4 life forever start-time now
+          ip sla 6
+           icmp-echo 2001:DB8:100:1011::1
+           frequency 5
+          ip sla schedule 6 life forever start-time now
+          logging trap warnings
+          logging host 10.0.100.5
+          ipv6 router ospf 6
+           router-id 0.0.6.132
+           passive-interface default
+           no passive-interface GigabitEthernet1/0
+          !
+          !
+          !
+          !
+          snmp-server community ENCORSA RO NMS-SERVER
+          snmp-server contact Maxime - SpyKeeR
+          snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+          snmp-server enable traps ospf state-change
+          snmp-server enable traps ospf errors
+          snmp-server enable traps ospf retransmit
+          snmp-server enable traps ospf lsa
+          snmp-server enable traps ospf cisco-specific state-change nssa-trans-change
+          snmp-server enable traps ospf cisco-specific state-change shamlink interface
+          snmp-server enable traps ospf cisco-specific state-change shamlink neighbor
+          snmp-server enable traps ospf cisco-specific errors
+          snmp-server enable traps ospf cisco-specific retransmit
+          snmp-server enable traps ospf cisco-specific lsa
+          snmp-server host 10.0.100.5 version 2c ENCORSA
+          snmp ifmib ifindex persist
+          !
+          !
+          radius server RADIUS
+           address ipv4 10.0.100.5 auth-port 1812 acct-port 1813
+           key $trongPass
+          !
+          !
+          control-plane
+          !
+          banner exec ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner incoming ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner login ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner motd ^C D2, ENCOR Skills Assessment, Scenario 1 ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+          !
+          ntp server 10.0.11.1
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: D2
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: 200
+    y: 120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: GigabitEthernet1/0
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: GigabitEthernet1/1
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: GigabitEthernet1/2
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: GigabitEthernet1/3
+        mac_address: null
+        type: physical
+        slot: 7
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 4623 bytes
+          !
+          ! Last configuration change at 16:01:20 UTC Thu Mar 26 2026
+          !
+          version 15.2
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          no service password-encryption
+          service compress-config
+          !
+          hostname A1
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          enable secret 9 $9$UtZICmrd30gpm9$GWRCAruPyl1iuEVUop5XVIyV00X3AiwfiR2BuXwIAXE
+          !
+          username sadmin privilege 15 secret 9 $9$4PwD8KU2Jksqvv$rgO4vkF5tc7KqdWGkMb6CF52Ya/lWAMefWRZntu2c8M
+          aaa new-model
+          !
+          !
+          aaa authentication login default group radius local
+          !
+          !
+          !
+          !
+          !
+          !
+          aaa session-id common
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          no ip domain-lookup
+          ip cef
+          no ipv6 cef
+          !
+          !
+          !
+          spanning-tree mode rapid-pvst
+          spanning-tree extend system-id
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface Port-channel1
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+          !
+          interface Port-channel2
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+          !
+          interface GigabitEthernet0/0
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet0/1
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet0/2
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 2 mode active
+          !
+          interface GigabitEthernet0/3
+           switchport trunk encapsulation dot1q
+           switchport trunk native vlan 999
+           switchport mode trunk
+           negotiation auto
+           channel-group 2 mode active
+          !
+          interface GigabitEthernet1/0
+           switchport access vlan 101
+           switchport mode access
+           negotiation auto
+           spanning-tree portfast edge
+          !
+          interface GigabitEthernet1/1
+           switchport access vlan 100
+           switchport mode access
+           negotiation auto
+           spanning-tree portfast edge
+          !
+          interface Vlan100
+           ip address 10.0.100.3 255.255.255.0
+           ipv6 address FE80::A1:1 link-local
+           ipv6 address 2001:DB8:100:100::3/64
+          !
+          ip forward-protocol nd
+          !
+          ip http server
+          ip http secure-server
+          !
+          ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          !
+          ip access-list standard NMS-SERVER
+           permit 10.0.100.5
+          !
+          !
+          logging trap warnings
+          logging host 10.0.100.5
+          !
+          !
+          !
+          snmp-server community ENCORSA RO NMS-SERVER
+          snmp-server contact Maxime - SpyKeeR
+          snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart
+          snmp-server host 10.0.100.5 version 2c ENCORSA
+          snmp ifmib ifindex persist
+          !
+          !
+          radius server RADIUS
+           address ipv4 10.0.100.5 auth-port 1812 acct-port 1813
+           key $trongPass
+          !
+          !
+          control-plane
+          !
+          banner exec ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner incoming ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner login ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner motd ^C A1, ENCOR Skills Assessment, Scenario 1 ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+          !
+          ntp server 10.0.10.1
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: A1
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: -40
+    y: 240
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: GigabitEthernet1/0
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: GigabitEthernet1/1
+        mac_address: null
+        type: physical
+        slot: 5
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: PC2
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 320
+    y: 200
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n7
+    image_definition: null
+    label: PC4
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 120
+    y: 240
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n8
+    image_definition: null
+    label: PC3
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: -200
+    y: 240
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration:
+      - name: default
+        content: System Bridge
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n9
+    image_definition: null
+    label: VMnet (CCNP_VM)
+    node_definition: external_connector
+    parameters: {}
+    ram: null
+    tags: []
+    x: -400
+    y: 200
+    interfaces:
+      - id: i0
+        label: port
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n2
+    n2: n0
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: R2-GigabitEthernet1<->R1-GigabitEthernet1
+  - id: l1
+    n1: n0
+    n2: n1
+    i1: i3
+    i2: i3
+    conditioning: {}
+    label: R1-GigabitEthernet3<->R3-GigabitEthernet3
+  - id: l2
+    n1: n3
+    n2: n4
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: D1-GigabitEthernet0/0<->D2-GigabitEthernet0/0
+  - id: l3
+    n1: n3
+    n2: n4
+    i1: i2
+    i2: i2
+    conditioning: {}
+    label: D1-GigabitEthernet0/1<->D2-GigabitEthernet0/1
+  - id: l4
+    n1: n3
+    n2: n4
+    i1: i3
+    i2: i3
+    conditioning: {}
+    label: D1-GigabitEthernet0/2<->D2-GigabitEthernet0/2
+  - id: l5
+    n1: n3
+    n2: n4
+    i1: i4
+    i2: i4
+    conditioning: {}
+    label: D1-GigabitEthernet0/3<->D2-GigabitEthernet0/3
+  - id: l6
+    n1: n0
+    n2: n3
+    i1: i2
+    i2: i5
+    conditioning: {}
+    label: R1-GigabitEthernet2<->D1-GigabitEthernet1/0
+  - id: l7
+    n1: n1
+    n2: n4
+    i1: i2
+    i2: i5
+    conditioning: {}
+    label: R3-GigabitEthernet2<->D2-GigabitEthernet1/0
+  - id: l8
+    n1: n3
+    n2: n5
+    i1: i6
+    i2: i1
+    conditioning: {}
+    label: D1-GigabitEthernet1/1<->A1-GigabitEthernet0/0
+  - id: l9
+    n1: n3
+    n2: n5
+    i1: i7
+    i2: i2
+    conditioning: {}
+    label: D1-GigabitEthernet1/2<->A1-GigabitEthernet0/1
+  - id: l10
+    n1: n4
+    n2: n5
+    i1: i6
+    i2: i3
+    conditioning: {}
+    label: D2-GigabitEthernet1/1<->A1-GigabitEthernet0/2
+  - id: l11
+    n1: n4
+    n2: n5
+    i1: i7
+    i2: i4
+    conditioning: {}
+    label: D2-GigabitEthernet1/2<->A1-GigabitEthernet0/3
+  - id: l12
+    n1: n6
+    n2: n4
+    i1: i0
+    i2: i8
+    conditioning: {}
+    label: PC2-eth0<->D2-GigabitEthernet1/3
+  - id: l13
+    n1: n5
+    n2: n8
+    i1: i5
+    i2: i0
+    conditioning: {}
+    label: A1-GigabitEthernet1/0<->PC3-eth0
+  - id: l14
+    n1: n5
+    n2: n7
+    i1: i6
+    i2: i0
+    conditioning: {}
+    label: A1-GigabitEthernet1/1<->PC4-eth0
+  - id: l15
+    n1: n3
+    n2: n9
+    i1: i8
+    i2: i0
+    conditioning: {}
+    label: D1-GigabitEthernet1/3<->VMnet 15-port
+lab:
+  description: ENCOR Skills Assessment
+  notes: ''
+  title: CCNP ENCOR v8 - Hands On Skills - EXAM
+  version: 0.3.0

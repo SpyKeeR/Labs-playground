@@ -1,0 +1,19 @@
+##IP Info
+Subnets are 192.168.XX.0/24 (R1-R2 segment is 192.168.12.0/24, R2-R5 segment is 192.168.25.0/24, R3-R5 segment is 192.168.35.0/24, etc.)
+IP addresses are .X (R1 IPs are .1, R2 IPs are .2, etc.)
+
+##Lab Instructions
+1. Examine the routing table of R1. What routing protocols is R1 running? RIP, OSPF, EIGRP
+
+2. What router will R1 use as the next hop to forward packets from PC1 to each of the following destinations?
+>203.0.113.113 : RIP : 203.0.113.96/27 via 192.168.12.2 Gig0/1 - R2
+>8.8.8.8 : OSPF external Type 2 : 0.0.0.0/4 via 192.168.13.3 Gig0/2 - R3
+>172.20.20.27 : OSPF external Type 2 : 172.0.0.0/9 via 192.168.13.3 Gig0/2 - R3
+>198.0.27.56 : EIGRP External : 198.0.24.0/21 via 192.168.14.4 - Gig0/3 - R4
+>192.168.255.238 : EIGRP External : 192.168.255.232/29 via 192.168.14.4 - Gig0/3 - R4
+
+3. Verify each of your answers using both of the following methods:
+>Verify using a command on PC1
+traceroute
+>Verify using a 'show' command on R1
+show ip route *.*.*.*

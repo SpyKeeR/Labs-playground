@@ -1,0 +1,272 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 240
+    y: 200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: R2
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 400
+    y: 200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: D1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 240
+    y: 360
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: D2
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 400
+    y: 360
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: PC1
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 160
+    y: 520
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: PC2
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 280
+    y: 520
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: PC3
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 360
+    y: 520
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n7
+    image_definition: null
+    label: PC4
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 480
+    y: 520
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n0
+    n2: n1
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: R1-GigabitEthernet1<->R2-GigabitEthernet1
+  - id: l1
+    n1: n0
+    n2: n2
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: R1-GigabitEthernet2<->D1-GigabitEthernet1
+  - id: l2
+    n1: n1
+    n2: n3
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: R2-GigabitEthernet2<->D2-GigabitEthernet1
+  - id: l3
+    n1: n2
+    n2: n4
+    i1: i2
+    i2: i0
+    conditioning: {}
+    label: D1-GigabitEthernet2<->PC1-eth0
+  - id: l4
+    n1: n2
+    n2: n5
+    i1: i3
+    i2: i0
+    conditioning: {}
+    label: D1-GigabitEthernet3<->PC2-eth0
+  - id: l5
+    n1: n3
+    n2: n6
+    i1: i2
+    i2: i0
+    conditioning: {}
+    label: D2-GigabitEthernet2<->PC3-eth0
+  - id: l6
+    n1: n3
+    n2: n7
+    i1: i3
+    i2: i0
+    conditioning: {}
+    label: D2-GigabitEthernet3<->PC4-eth0
+lab:
+  description: Lab - Implement Inter-VLAN Routing
+  notes: ''
+  title: CCNP - ENCOR v8 - Module 1 LAB
+  version: 0.3.0

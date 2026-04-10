@@ -1,0 +1,186 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: -120
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: D1
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: 40
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: A1
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: 200
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: PC1
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: -40
+    y: 120
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: PC2
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 120
+    y: 120
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n0
+    n2: n1
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: R1-GigabitEthernet1<->D1-GigabitEthernet0/0
+  - id: l1
+    n1: n1
+    n2: n2
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: D1-GigabitEthernet0/1<->A1-GigabitEthernet0/0
+  - id: l2
+    n1: n1
+    n2: n2
+    i1: i3
+    i2: i2
+    conditioning: {}
+    label: D1-GigabitEthernet0/2<->A1-GigabitEthernet0/1
+  - id: l3
+    n1: n1
+    n2: n3
+    i1: i4
+    i2: i0
+    conditioning: {}
+    label: D1-GigabitEthernet0/3<->PC1-eth0
+  - id: l4
+    n1: n2
+    n2: n4
+    i1: i3
+    i2: i0
+    conditioning: {}
+    label: A1-GigabitEthernet0/2<->PC2-eth0
+lab:
+  description: Lab -Configure Protections for Passwords and Terminal Lines
+  notes: ''
+  title: CCNP ENCOR v8 - Module 26 Device Protection - LAB
+  version: 0.3.0

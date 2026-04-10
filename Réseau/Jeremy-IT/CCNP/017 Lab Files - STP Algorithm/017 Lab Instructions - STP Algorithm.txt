@@ -1,0 +1,17 @@
+# Lab Instructions #
+- Without using the CLI, determine the STP topology of the LAN.
+- (Bonus points) Instead of non-designated, identify the alternate/backup roles of blocking ports.
+- Use the CLI to confirm your answers afterward.
+
+# Reference #
+1) Root bridge election (one per LAN)
+- Lowest BID
+2) Root port selection (one per switch)
+- Lowest root cost
+- Lowest neighbor BID
+- Lowest neighbor port ID
+- Lowest local port ID
+3) Designated port selection (one per segment)
+- Port on switch with lowest root cost
+- Port on switch with lowest BID
+- Lowest local port ID

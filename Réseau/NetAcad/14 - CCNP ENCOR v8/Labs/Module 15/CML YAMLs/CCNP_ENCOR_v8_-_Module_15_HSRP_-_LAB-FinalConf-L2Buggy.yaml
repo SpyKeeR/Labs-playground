@@ -1,0 +1,711 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 5041 bytes\n\
+          !\n! Last configuration change at 19:46:43 UTC Fri Mar 20 2026\n!\nversion\
+          \ 17.16\nservice timestamps debug datetime msec\nservice timestamps log\
+          \ datetime msec\n!\nhostname D1\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\nip audit notify log\nip audit po max-events 100\nno ip domain\
+          \ lookup\nip cef\nlogin on-success log\nipv6 unicast-routing\nipv6 cef\n\
+          !\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-131184666\n\
+          \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-131184666\n\
+          \ revocation-check none\n rsakeypair TP-self-signed-131184666\n hash sha512\n\
+          !\n!\ncrypto pki certificate chain TP-self-signed-131184666\n certificate\
+          \ self-signed 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886\
+          \ F70D0101 0D050030\n  30312E30 2C060355 04030C25 494F532D 53656C66 2D536967\
+          \ 6E65642D 43657274\n  69666963 6174652D 31333131 38343636 36301E17 0D323630\
+          \ 33323031 36303535\n  375A170D 33363033 31393136 30353537 5A303031 2E302C06\
+          \ 03550403 0C25494F\n  532D5365 6C662D53 69676E65 642D4365 72746966 69636174\
+          \ 652D3133 31313834\n  36363630 82012230 0D06092A 864886F7 0D010101 05000382\
+          \ 010F0030 82010A02\n  82010100 D19A6A05 64F0B4DF AF3116CB 77CD2FAE 56B89029\
+          \ BB421EEC 87B8BFAE\n  18F6791A 1C369058 508AFB57 023DB940 452AB4B9 AB95538E\
+          \ 631EF38A D99DA696\n  EF8A251F 2288E571 3D11E647 0418DD0F 50CDED08 8E51DE81\
+          \ EE5BE6E1 8224849B\n  C75AF370 2DEB9CD2 ADF11EEB 687B0319 E81FE645 955FE1E3\
+          \ DC090E9F 34451531\n  E143D35D 6C1EEC76 C3345BD6 6D77065C 46D92E34 7C3C5CD2\
+          \ CB64072B 322E5FB1\n  AB869D55 64BB9268 81254CEF 37CB14A8 A5060FC6 3E9ED51C\
+          \ 49E6DC9C 831C4FBD\n  23666C66 4524E14A B29E11AC 36CFE027 A669149C 8BD499AE\
+          \ 540EB5A0 FB5966EB\n  4DCB63F6 2D76960B 6A74B79E 6815EB2F E474B063 6FD1B22B\
+          \ 2A181B68 172EAF7C\n  8311CB5B 02030100 01A35330 51301D06 03551D0E 04160414\
+          \ 9D78B45D 8ECA4FD8\n  6B05B689 3A35398D EAD64248 301F0603 551D2304 18301680\
+          \ 149D78B4 5D8ECA4F\n  D86B05B6 893A3539 8DEAD642 48300F06 03551D13 0101FF04\
+          \ 05300301 01FF300D\n  06092A86 4886F70D 01010D05 00038201 010099DA 2D524ADA\
+          \ F4876A02 ABF2A775\n  8E6EF2F5 CBE7AC3E CC787479 D972A7D7 D6121684 B8CE831B\
+          \ 1E1A0D7B E2B86A80\n  C3CC91BC 4FE2BE25 18BFEC46 E0AFDC86 0544A698 91423A68\
+          \ 81F318B2 007B0398\n  27FD90F4 0DE4CC3C AF79149C ED564474 43D56C9C F5AAD7A2\
+          \ B93968C8 D59F52EA\n  E2C4AFB3 51F33409 A7502FB7 62800413 A074D7A4 59A14259\
+          \ C81C738A FEB6166E\n  7C7DB046 9188C9B6 F6B58EAE 854DA8A2 9F5B4B72 E16825C9\
+          \ 8880FAD4 0B89A649\n  CCB797F2 3E7739E3 F2569BC9 B03367FA 7B273A3C 51EF4466\
+          \ 64F7B31F D62F3535\n  0085E427 A155C4A2 84A0722A 34C87012 D916A29E F414E08D\
+          \ 79B4D882 12AD4AE6\n  0C2BE0C7 12836917 957D023C 3E764797 2808\n  \tquit\n\
+          !\n!\nmemory free low-watermark processor 79497\n!\n!\nspanning-tree mode\
+          \ rapid-pvst\nspanning-tree extend system-id\n!\n!\nvlan internal allocation\
+          \ policy ascending\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 192.168.1.1\
+          \ 255.255.255.0\n ipv6 address FE80::D1:3 link-local\n ipv6 address 2001:DB8:ACAD:1000::1/64\n\
+          !\ninterface Port-channel1\n switchport trunk encapsulation dot1q\n switchport\
+          \ mode trunk\n!\ninterface Port-channel12\n switchport trunk encapsulation\
+          \ dot1q\n switchport mode trunk\n!\ninterface Ethernet0/0\n switchport trunk\
+          \ encapsulation dot1q\n switchport mode trunk\n channel-group 12 mode active\n\
+          !\ninterface Ethernet0/1\n switchport trunk encapsulation dot1q\n switchport\
+          \ mode trunk\n channel-group 12 mode active\n!\ninterface Ethernet0/2\n\
+          \ switchport trunk encapsulation dot1q\n switchport mode trunk\n channel-group\
+          \ 12 mode active\n!\ninterface Ethernet0/3\n switchport trunk encapsulation\
+          \ dot1q\n switchport mode trunk\n channel-group 12 mode active\n!\ninterface\
+          \ Ethernet1/0\n switchport trunk encapsulation dot1q\n switchport mode trunk\n\
+          \ channel-group 1 mode active\n!\ninterface Ethernet1/1\n switchport trunk\
+          \ encapsulation dot1q\n switchport mode trunk\n channel-group 1 mode active\n\
+          !\ninterface Ethernet1/2\n shutdown\n!\ninterface Ethernet1/3\n shutdown\n\
+          !\ninterface Vlan11\n ip address 10.11.0.1 255.255.255.0\n standby version\
+          \ 2\n standby 11 ip 10.11.0.254\n standby 11 timers msec 250 msec 750\n\
+          \ standby 11 priority 150\n standby 11 preempt\n standby 11 authentication\
+          \ md5 key-string Super53cret\n standby 116 ipv6 FE80::116\n standby 116\
+          \ ipv6 2001:DB8:ACAD:11::254/64\n standby 116 priority 150\n standby 116\
+          \ preempt\n ipv6 address FE80::D1:1 link-local\n ipv6 address 2001:DB8:ACAD:11::1/64\n\
+          !\ninterface Vlan21\n ip address 10.21.0.1 255.255.255.0\n standby version\
+          \ 2\n standby 21 ip 10.21.0.254\n standby 21 timers msec 250 msec 750\n\
+          \ standby 21 preempt\n standby 21 authentication md5 key-string Super53cret\n\
+          \ standby 216 ipv6 FE80::216\n standby 216 ipv6 2001:DB8:ACAD:21::254/64\n\
+          \ standby 216 preempt\n ipv6 address FE80::D1:2 link-local\n ipv6 address\
+          \ 2001:DB8:ACAD:21::1/64\n!\nip forward-protocol nd\nip forward-protocol\
+          \ udp\n!\n!\nip http server\nip http secure-server\nip ssh bulk-mode 131072\n\
+          !\nno logging btrace\n!\n!\n!\ncontrol-plane\n!\n!\nbanner motd ^C D1, Implement\
+          \ HSRP ^C\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\nline\
+          \ aux 0\nline vty 0 4\n exec-timeout 0 0\n privilege level 15\n password\
+          \ cisco123\n logging synchronous\n login\n transport input ssh\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: D1
+    node_definition: ioll2-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: -40
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: Ethernet1/0
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: Ethernet1/1
+        mac_address: null
+        type: physical
+        slot: 5
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 2833 bytes
+          !
+          ! Last configuration change at 19:46:43 UTC Fri Mar 20 2026
+          !
+          version 17.16
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          !
+          hostname D2
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          ip audit notify log
+          ip audit po max-events 100
+          no ip domain lookup
+          ip cef
+          login on-success log
+          ipv6 unicast-routing
+          ipv6 cef
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          memory free low-watermark processor 79497
+          !
+          !
+          spanning-tree mode rapid-pvst
+          spanning-tree extend system-id
+          !
+          !
+          vlan internal allocation policy ascending
+          !
+          !
+          !
+          !
+          !
+          interface Loopback0
+           ip address 192.168.1.1 255.255.255.0
+           ipv6 address FE80::D2:3 link-local
+           ipv6 address 2001:DB8:ACAD:1000::1/64
+          !
+          interface Port-channel2
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+          !
+          interface Port-channel12
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+          !
+          interface Ethernet0/0
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           channel-group 12 mode active
+          !
+          interface Ethernet0/1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           channel-group 12 mode active
+          !
+          interface Ethernet0/2
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           channel-group 12 mode active
+          !
+          interface Ethernet0/3
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           channel-group 12 mode active
+          !
+          interface Ethernet1/0
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           channel-group 2 mode active
+          !
+          interface Ethernet1/1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           channel-group 2 mode active
+          !
+          interface Ethernet1/2
+           shutdown
+          !
+          interface Ethernet1/3
+           shutdown
+          !
+          interface Vlan11
+           ip address 10.11.0.2 255.255.255.0
+           standby version 2
+           standby 11 ip 10.11.0.254
+           standby 11 timers msec 250 msec 750
+           standby 11 preempt
+           standby 11 authentication md5 key-string Super53cret
+           standby 116 ipv6 FE80::116
+           standby 116 ipv6 2001:DB8:ACAD:11::254/64
+           standby 116 preempt
+           ipv6 address FE80::D2:1 link-local
+           ipv6 address 2001:DB8:ACAD:11::2/64
+          !
+          interface Vlan21
+           ip address 10.21.0.2 255.255.255.0
+           standby version 2
+           standby 21 ip 10.21.0.254
+           standby 21 timers msec 250 msec 750
+           standby 21 priority 150
+           standby 21 preempt
+           standby 21 authentication md5 key-string Super53cret
+           standby 216 ipv6 FE80::216
+           standby 216 ipv6 2001:DB8:ACAD:21::254/64
+           standby 216 priority 150
+           standby 216 preempt
+           ipv6 address FE80::D2:2 link-local
+           ipv6 address 2001:DB8:ACAD:21::2/64
+          !
+          ip forward-protocol nd
+          ip forward-protocol udp
+          !
+          !
+          ip http server
+          ip http secure-server
+          ip ssh bulk-mode 131072
+          !
+          no logging btrace
+          !
+          !
+          !
+          control-plane
+          !
+          !
+          banner motd ^C D2, Implement HSRP ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           privilege level 15
+           password cisco123
+           logging synchronous
+           login
+           transport input ssh
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: D2
+    node_definition: ioll2-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: 282
+    y: -43
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: Ethernet1/0
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: Ethernet1/1
+        mac_address: null
+        type: physical
+        slot: 5
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 3979 bytes
+          !
+          ! Last configuration change at 19:46:26 UTC Fri Mar 20 2026
+          !
+          version 15.2
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          no service password-encryption
+          service compress-config
+          !
+          hostname A1
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          !
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          ip cef
+          no ipv6 cef
+          !
+          !
+          !
+          spanning-tree mode pvst
+          spanning-tree extend system-id
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface Port-channel1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+          !
+          interface Port-channel2
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+          !
+          interface GigabitEthernet0/0
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           negotiation auto
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet0/1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           negotiation auto
+           channel-group 1 mode active
+          !
+          interface GigabitEthernet0/2
+           shutdown
+           negotiation auto
+          !
+          interface GigabitEthernet0/3
+           shutdown
+           negotiation auto
+          !
+          interface GigabitEthernet1/0
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           negotiation auto
+           channel-group 2 mode active
+          !
+          interface GigabitEthernet1/1
+           switchport trunk encapsulation dot1q
+           switchport mode trunk
+           negotiation auto
+           channel-group 2 mode active
+          !
+          interface GigabitEthernet1/2
+           shutdown
+           negotiation auto
+          !
+          interface GigabitEthernet1/3
+           shutdown
+           negotiation auto
+          !
+          interface GigabitEthernet2/0
+           switchport access vlan 11
+           switchport mode access
+           negotiation auto
+           spanning-tree portfast edge
+          !
+          interface GigabitEthernet2/1
+           switchport access vlan 21
+           switchport mode access
+           negotiation auto
+           spanning-tree portfast edge
+          !
+          interface Vlan11
+           ip address 10.11.0.3 255.255.255.0
+           ipv6 address FE80::A1:1 link-local
+           ipv6 address 2001:DB8:ACAD:11::3/64
+          !
+          ip default-gateway 10.11.0.254
+          ip forward-protocol nd
+          !
+          ip http server
+          ip http secure-server
+          !
+          ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          !
+          !
+          !
+          !
+          !
+          !
+          control-plane
+          !
+          banner exec ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner incoming ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner login ^C
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner motd ^C A1, Implement HSRP ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           privilege level 15
+           password cisco123
+           logging synchronous
+           login
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: A1
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: 120
+    y: 154
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i5
+        label: GigabitEthernet1/0
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i6
+        label: GigabitEthernet1/1
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i7
+        label: GigabitEthernet1/2
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i8
+        label: GigabitEthernet1/3
+        mac_address: null
+        type: physical
+        slot: 7
+      - id: i9
+        label: GigabitEthernet2/0
+        mac_address: null
+        type: physical
+        slot: 8
+      - id: i10
+        label: GigabitEthernet2/1
+        mac_address: null
+        type: physical
+        slot: 9
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: PC1
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: -33
+    y: 153
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: PC2
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 285
+    y: 153
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n0
+    n2: n1
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: iol-l2-0-Ethernet0/0<->iol-l2-1-Ethernet0/0
+  - id: l1
+    n1: n0
+    n2: n1
+    i1: i2
+    i2: i2
+    conditioning: {}
+    label: iol-l2-0-Ethernet0/1<->iol-l2-1-Ethernet0/1
+  - id: l2
+    n1: n0
+    n2: n1
+    i1: i3
+    i2: i3
+    conditioning: {}
+    label: iol-l2-0-Ethernet0/2<->iol-l2-1-Ethernet0/2
+  - id: l3
+    n1: n0
+    n2: n1
+    i1: i4
+    i2: i4
+    conditioning: {}
+    label: iol-l2-0-Ethernet0/3<->iol-l2-1-Ethernet0/3
+  - id: l4
+    n1: n0
+    n2: n2
+    i1: i5
+    i2: i1
+    conditioning: {}
+    label: iol-l2-0-Ethernet1/0<->iosvl2-0-GigabitEthernet0/0
+  - id: l5
+    n1: n0
+    n2: n2
+    i1: i6
+    i2: i2
+    conditioning: {}
+    label: iol-l2-0-Ethernet1/1<->iosvl2-0-GigabitEthernet0/1
+  - id: l6
+    n1: n1
+    n2: n2
+    i1: i5
+    i2: i5
+    conditioning: {}
+    label: iol-l2-1-Ethernet1/0<->iosvl2-0-GigabitEthernet1/0
+  - id: l7
+    n1: n1
+    n2: n2
+    i1: i6
+    i2: i6
+    conditioning: {}
+    label: iol-l2-1-Ethernet1/1<->iosvl2-0-GigabitEthernet1/1
+  - id: l8
+    n1: n2
+    n2: n3
+    i1: i9
+    i2: i0
+    conditioning: {}
+    label: iosvl2-0-GigabitEthernet2/0<->desktop-0-eth0
+  - id: l9
+    n1: n2
+    n2: n4
+    i1: i10
+    i2: i0
+    conditioning: {}
+    label: iosvl2-0-GigabitEthernet2/1<->desktop-1-eth0
+lab:
+  description: Lab - Implement HSRP Topology
+  notes: ''
+  title: CCNP ENCOR v8 - Module 15 HSRP - LAB
+  version: 0.3.0

@@ -1,0 +1,16 @@
+# Lab Instructions #
+- Aside from these lab steps, I recommend experimenting to get familiar with VTP's behavior (ie. changing versions and modes, seeing if switches sync, etc)
+- Enable VTP event debugging on the switches beforehand ("debug sw-vlan vtp events").
+1) Configure VTP domain "jitl" and VTP version 2 on SW1, and then check SW4's VTP status. What are SW4's domain/version/revision?
+2) Configure SW2 in transparent mode and change the VTP domain name to "JITL". Configure VLAN 2 on SW1. Which switches sync to SW1, if any?
+- Change SW2's domain name back to "jitl". Does anything change? (you may need to shut/no shut an interface to force a VTP advertisement without waiting).
+3) Configure VTP version 3 on SW1, SW3, and SW4. Create VLAN 3 on SW1. Does SW2 forward the VTPv3 advertisements?
+- Configure SW2 in VTPv3 after.
+4) Configure and encrypt VTP password "jeremysitlab" on SW4. Create VLAN 4 on SW1. Does SW4 add VLAN 4?
+- Copy the encrypted password from SW4 and configure it on the other switches. Create VLAN 5 on SW1. Does SW4 sync its VLAN database?
+5) Shut down SW4 G0/0, and then make SW4 a VTP primary server. Re-enable G0/0. 
+- View VTP  devices on SW3. Which switch is marked as in conflict with the domain?
+6) Create VLAN 6 on SW1 and VLAN 7 on SW4. Which switch does SW3 sync to?
+- Make SW3 the VTP primary server. Do SW1 and SW4 become secondary servers?
+7) Enable VTP pruning on one of the switches. Do all other switches activate VTP pruning? Why or why not?
+8) Ensure VTP pruning is enabled on all switches, and check where pruning has occurred.

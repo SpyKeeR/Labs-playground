@@ -1,0 +1,25 @@
+##IP Info##
+Subnet 1: 192.168.1.0/24
+R1 G0/0: 192.168.1.1/24
+SW1 VLAN1: 192.168.1.2/24
+SRV1: 192.168.1.11/24
+SRV2: 192.168.1.12/24
+SRV3: 192.168.1.13/24
+
+##Lab Instructions##
+1. Configure SRV1, SRV2, and SRV3 with the appropriate hostname, IP address, and default gateway. 
+*the info for the Server node in the 'ADD NODES' tab lists the necessary commands.
+
+2. Start a packet capture on the link between R1 and SW1. *I recommend increasing the Max Packets from the default of 50.
+
+3. Use R1 to generate unicast and broadcast traffic in the network.
+
+4. Generate some unknown unicast traffic in the network. How will this traffic look (compared to the known unicast traffic) in the packet capture?
+
+5. Examine the packet capture and identify unicast, broadcast, and multicast messages. 
+*In CML, messages in the packet capture only display when you are viewing the link's 'PACKET CAPTURE' tab. 
+ I recommend downloading the packet capture and viewing it in Wireshark.
+
+6. Disable MAC address aging on SW1.
+
+7. Statically configure R1's MAC address on SW1.

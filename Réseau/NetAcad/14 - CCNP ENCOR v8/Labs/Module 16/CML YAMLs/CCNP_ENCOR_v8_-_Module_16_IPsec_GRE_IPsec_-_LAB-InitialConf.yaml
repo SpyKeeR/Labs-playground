@@ -1,0 +1,881 @@
+annotations: []
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 6340 bytes\n\
+          !\n! Last configuration change at 16:42:10 UTC Sun Mar 22 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\nservice call-home\nplatform qfp utilization monitor load 80\nplatform\
+          \ punt-keepalive disable-kernel-core\nplatform console serial\n!\nhostname\
+          \ R1\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging console\n\
+          !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\n!\n!\n!\n\
+          login on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n\
+          !\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n\
+          \ revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-1797203692\n\
+          \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-1797203692\n\
+          \ revocation-check none\n rsakeypair TP-self-signed-1797203692\n!\n!\ncrypto\
+          \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+          \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+          \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+          \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+          \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+          \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+          \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+          \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+          \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+          \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+          \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+          \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+          \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+          \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+          \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+          \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+          \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+          \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+          \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+          \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+          \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+          \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+          \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+          \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+          \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+          \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n\
+          \  \tquit\ncrypto pki certificate chain TP-self-signed-1797203692\n certificate\
+          \ self-signed 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886\
+          \ F70D0101 05050030\n  31312F30 2D060355 04031326 494F532D 53656C66 2D536967\
+          \ 6E65642D 43657274\n  69666963 6174652D 31373937 32303336 3932301E 170D3236\
+          \ 30333232 31363332\n  35365A17 0D333630 33323131 36333235 365A3031 312F302D\
+          \ 06035504 03132649\n  4F532D53 656C662D 5369676E 65642D43 65727469 66696361\
+          \ 74652D31 37393732\n  30333639 32308201 22300D06 092A8648 86F70D01 01010500\
+          \ 0382010F 00308201\n  0A028201 01008D07 8E10BF67 5265F10C C2462D67 1223FFCD\
+          \ 3E01C8F0 ACEECFDB\n  D62DD2EB 70F25B16 7007173D E1D38780 ABB27B79 306DF28E\
+          \ 74224B34 67DE493E\n  08F363D2 36A480F6 7B3B2864 49DE60A4 6EB069D4 227E4EDB\
+          \ EDBCC924 C0EA915B\n  C606C07A 1F0A395B 15667158 E41D75EE 0EC36C29 3310663E\
+          \ EB421B02 408FE094\n  38E776C4 10D5CCC5 866E078B 906C680D A353CD67 9CE6D4A3\
+          \ 2EBF61C5 8CD8380A\n  CBD233E7 4D3EBB51 A8D88023 CFF02934 6AEB30F5 F47902A3\
+          \ 08AEE66A 7B3EBF7B\n  432F4093 A4710C60 61262F00 8815393E B516B5E9 287E6396\
+          \ DE3DC56E 6662A101\n  ECF6001C EDE6C923 47F0D430 95C4CE2F C048C50F 37358BE9\
+          \ B23FAF95 E4B2D897\n  AE040175 99710203 010001A3 53305130 0F060355 1D130101\
+          \ FF040530 030101FF\n  301F0603 551D2304 18301680 149B1274 7F316ACD 62F4D4DA\
+          \ F2FA09CC 936066F4\n  A3301D06 03551D0E 04160414 9B12747F 316ACD62 F4D4DAF2\
+          \ FA09CC93 6066F4A3\n  300D0609 2A864886 F70D0101 05050003 82010100 74D8C95C\
+          \ 1B2ED9CE 004E2C1B\n  1C4A2B0A 6B6BC9AE 42DEBE39 889AF5E2 BADA2554 BF4F0DB2\
+          \ 5245941C 4EDEC151\n  BA1A65A4 EB73DB13 21492967 D09ECD97 570F4DA1 3EFC76F5\
+          \ B01A19EE 23EA96A5\n  3B6B46AC 7ECB2B60 9B7EDD08 DD134EBF F8BB324E 0D8D56C6\
+          \ 8B7BF4B4 78512CCA\n  4AC9D876 BC214B88 76FD05D9 4C08ACB5 FBA67DD6 50D2AC9C\
+          \ E8DA0199 08742599\n  45B6FD47 5D795769 9A1C16EB 0A19AD3A 9A48EA19 BAF5246E\
+          \ D0FB5D36 602B199F\n  395E4068 2531FD9D 7F80826C E5D113AE 847B3B2B 00229155\
+          \ 6EE54BA1 18A20F58\n  EFF78FE5 72E1AECC 506D8FCA 3949ED78 0B4F13B5 7EBAAAF7\
+          \ D007BD6A 4F924441\n  DEED41DE 25080CFA D90D74F7 358AFD67 CF4F0CDB\n  \t\
+          quit\n!\nlicense udi pid CSR1000V sn 9YA1QAOGAIA\ndiagnostic bootup level\
+          \ minimal\nmemory free low-watermark processor 71464\n!\n!\nspanning-tree\
+          \ extend system-id\n!\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n description\
+          \ connection to R2\n ip address 64.100.0.2 255.255.255.252\n negotiation\
+          \ auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet2\n\
+          \ description Connection to D1\n ip address 10.10.0.1 255.255.255.252\n\
+          \ negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet3\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\ninterface GigabitEthernet4\n no ip address\n shutdown\n negotiation\
+          \ auto\n no mop enabled\n no mop sysid\n!\nrouter ospf 123\n router-id 1.1.1.1\n\
+          \ auto-cost reference-bandwidth 1000\n network 10.10.0.0 0.0.0.3 area 0\n\
+          \ default-information originate\n!\nip forward-protocol nd\nno ip http server\n\
+          ip http secure-server\n!\nip route 0.0.0.0 0.0.0.0 64.100.0.1\n!\n!\n!\n\
+          !\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C This is R1, Implement\
+          \ GRE over IPsec Site-to-Site VPNs ^C\n!\nline con 0\n exec-timeout 0 0\n\
+          \ logging synchronous\n stopbits 1\nline vty 0 4\n exec-timeout 0 0\n login\n\
+          \ transport input ssh\n!\ncall-home\n ! If contact email address in call-home\
+          \ is configured as sch-smart-licensing@cisco.com\n ! the email address configured\
+          \ in Cisco Smart License Portal will be used as contact email address to\
+          \ send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+          \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n\
+          !\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: -200
+    y: -120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet4
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 6331 bytes\n\
+          !\n! Last configuration change at 16:42:10 UTC Sun Mar 22 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\nservice call-home\nplatform qfp utilization monitor load 80\nplatform\
+          \ punt-keepalive disable-kernel-core\nplatform console serial\n!\nhostname\
+          \ R3\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging console\n\
+          !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\n!\n!\n!\n\
+          login on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n\
+          !\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n\
+          \ revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-861501914\n\
+          \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-861501914\n\
+          \ revocation-check none\n rsakeypair TP-self-signed-861501914\n!\n!\ncrypto\
+          \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+          \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+          \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+          \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+          \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+          \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+          \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+          \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+          \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+          \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+          \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+          \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+          \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+          \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+          \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+          \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+          \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+          \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+          \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+          \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+          \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+          \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+          \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+          \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+          \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+          \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n\
+          \  \tquit\ncrypto pki certificate chain TP-self-signed-861501914\n certificate\
+          \ self-signed 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886\
+          \ F70D0101 05050030\n  30312E30 2C060355 04031325 494F532D 53656C66 2D536967\
+          \ 6E65642D 43657274\n  69666963 6174652D 38363135 30313931 34301E17 0D323630\
+          \ 33323231 36333330\n  325A170D 33363033 32313136 33333032 5A303031 2E302C06\
+          \ 03550403 1325494F\n  532D5365 6C662D53 69676E65 642D4365 72746966 69636174\
+          \ 652D3836 31353031\n  39313430 82012230 0D06092A 864886F7 0D010101 05000382\
+          \ 010F0030 82010A02\n  82010100 C03E030C 84F5BD8E 851097F4 96FD1A77 6179ABD5\
+          \ 8BA42D26 84F4CF50\n  8B58344E 8872E850 5E541D5B 9FB93EC8 B44B287C 3B15C0FC\
+          \ A0F83EC2 BA514E97\n  6125324B E8D40373 E76EB172 2F30E098 9D5302AE 8560FCE3\
+          \ 41086CF1 B91D5CF9\n  D509DE57 A00F25AB FF3EC475 083011A8 4ABF3F6C 392A9624\
+          \ 2BB8AE08 959160E1\n  0C6C8063 4AA067D7 E7DEE162 5A57373F DF8249CF A8C35AD2\
+          \ FA9D6813 7BFDDF7C\n  5712FE95 5DA4D000 87C8012A B8D88369 ABFE70EE 1CB3248F\
+          \ FA70DF26 831EA387\n  DF513A8E A9ABB7EE 9C7EA81E 0A0C2919 5A6F3532 3DD94791\
+          \ 17735588 FAE7F988\n  B5A7539E 3A77A39C 244581C4 56C6ED14 417D1996 9BA8ACBF\
+          \ FC8A8979 2C7C5908\n  58275CA1 02030100 01A35330 51300F06 03551D13 0101FF04\
+          \ 05300301 01FF301F\n  0603551D 23041830 168014AD EAA12CDC 887AEC18 5F41079E\
+          \ 8974C207 B2C64430\n  1D060355 1D0E0416 0414ADEA A12CDC88 7AEC185F 41079E89\
+          \ 74C207B2 C644300D\n  06092A86 4886F70D 01010505 00038201 010011B4 C784E83C\
+          \ 112F3959 F6C799F3\n  7A89B975 F77A2205 8703F24D 6968F0A8 E1D66070 20941F92\
+          \ 466C18F7 9A1F4D05\n  825CA49D F1C7A408 026F85EA 627DF1DA 1B66654D D34E3B38\
+          \ 370C8D3A 43A5538B\n  638E69A0 F905C536 0A835CCD 7FEF6BCC A37477B6 800E8370\
+          \ 27911BC5 01BB8455\n  043A571D 567BCB1F 5B906782 3C353E5F 999C5420 1FBDE25E\
+          \ 54E53A21 97FB10FA\n  FDB7BA90 8975D84B 3F3B6254 0433F23B 80026BE3 918C1389\
+          \ B67CF1AA 052F6930\n  E1A6C3DA 5DE8127C 0C302261 213E9B24 55CA5EF2 EEFB9486\
+          \ 5E054305 A7863843\n  43C6D73E B2A008CD 039A62B1 D588B3F8 35371ABE BA6D7916\
+          \ 7A196376 BFB7F75E\n  1DA83B4B EA64AA02 0BC6AD40 FAC2B731 72C7\n  \tquit\n\
+          !\nlicense udi pid CSR1000V sn 9SI6FIWZ0SE\ndiagnostic bootup level minimal\n\
+          memory free low-watermark processor 71464\n!\n!\nspanning-tree extend system-id\n\
+          !\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n description Connection\
+          \ TO R2\n ip address 64.100.1.2 255.255.255.252\n negotiation auto\n no\
+          \ mop enabled\n no mop sysid\n!\ninterface GigabitEthernet2\n description\
+          \ Connection To D3\n ip address 10.10.4.1 255.255.255.252\n negotiation\
+          \ auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet3\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\ninterface GigabitEthernet4\n no ip address\n shutdown\n negotiation\
+          \ auto\n no mop enabled\n no mop sysid\n!\nrouter ospf 123\n router-id 3.3.3.1\n\
+          \ auto-cost reference-bandwidth 1000\n network 10.10.4.0 0.0.0.3 area 0\n\
+          \ default-information originate\n!\nip forward-protocol nd\nno ip http server\n\
+          ip http secure-server\n!\nip route 0.0.0.0 0.0.0.0 64.100.1.1\n!\n!\n!\n\
+          !\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C This is R3, Implement\
+          \ GRE overIPsec Site-to-Site VPNs ^C\n!\nline con 0\n exec-timeout 0 0\n\
+          \ logging synchronous\n stopbits 1\nline vty 0 4\n exec-timeout 0 0\n login\n\
+          \ transport input ssh\n!\ncall-home\n ! If contact email address in call-home\
+          \ is configured as sch-smart-licensing@cisco.com\n ! the email address configured\
+          \ in Cisco Smart License Portal will be used as contact email address to\
+          \ send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+          \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n\
+          !\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: R3
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 120
+    y: -120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet4
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 6445 bytes\n\
+          !\n! Last configuration change at 16:42:10 UTC Sun Mar 22 2026\n!\nversion\
+          \ 17.3\nservice timestamps debug datetime msec\nservice timestamps log datetime\
+          \ msec\nservice call-home\nplatform qfp utilization monitor load 80\nplatform\
+          \ punt-keepalive disable-kernel-core\nplatform console serial\n!\nhostname\
+          \ R2\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging console\n\
+          !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\n!\n!\n!\n\
+          login on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n\
+          !\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n enrollment pkcs12\n\
+          \ revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-1552895252\n\
+          \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-1552895252\n\
+          \ revocation-check none\n rsakeypair TP-self-signed-1552895252\n!\n!\ncrypto\
+          \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+          \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+          \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+          \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+          \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+          \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+          \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+          \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+          \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+          \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+          \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+          \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+          \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+          \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+          \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+          \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+          \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+          \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+          \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+          \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+          \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+          \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+          \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+          \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+          \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+          \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n\
+          \  \tquit\ncrypto pki certificate chain TP-self-signed-1552895252\n certificate\
+          \ self-signed 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886\
+          \ F70D0101 05050030\n  31312F30 2D060355 04031326 494F532D 53656C66 2D536967\
+          \ 6E65642D 43657274\n  69666963 6174652D 31353532 38393532 3532301E 170D3236\
+          \ 30333232 31363332\n  35305A17 0D333630 33323131 36333235 305A3031 312F302D\
+          \ 06035504 03132649\n  4F532D53 656C662D 5369676E 65642D43 65727469 66696361\
+          \ 74652D31 35353238\n  39353235 32308201 22300D06 092A8648 86F70D01 01010500\
+          \ 0382010F 00308201\n  0A028201 0100903E CB0C2254 B566A3CA AAE100D7 BF8C0F68\
+          \ 22DB7050 C0DF3547\n  357DD277 6E4C62FC 441F0C46 281A3B40 A56AA246 2DBF37B0\
+          \ 10261DC7 2275B60B\n  68510AD7 2F8805F6 EE74623F BE0B09CD AFE5BAD4 B066B301\
+          \ 33983282 800DEA5D\n  5948AD77 58366568 07981ABE 44C02AB7 7F570FAC F73E1A41\
+          \ 9EE91EAB FDD796A0\n  67B7226D F0899FA3 F63CE48D 5CCCB24A 70FB1DA9 86150CE0\
+          \ F65EB669 700F9483\n  3403BF42 7C769511 FB39B885 9342DC22 34810388 D6BE6D64\
+          \ D0C2099F 40A67386\n  EEA95291 5093CB53 E45594B4 6E1052CB DE655B56 981CF2BE\
+          \ 94E0E7D8 EC8BFF94\n  5DB72566 568C8603 191D89D0 6C97BBE3 62E8C997 9D083ECA\
+          \ 5280F134 269D6B39\n  06C077BC E2850203 010001A3 53305130 0F060355 1D130101\
+          \ FF040530 030101FF\n  301F0603 551D2304 18301680 14B2B44B E0274B8D 961ED552\
+          \ 102707AE 3C1FB4BF\n  F3301D06 03551D0E 04160414 B2B44BE0 274B8D96 1ED55210\
+          \ 2707AE3C 1FB4BFF3\n  300D0609 2A864886 F70D0101 05050003 82010100 3C2FC2C3\
+          \ CCC038B2 4BE3F002\n  5617BF38 E6707C2D FDAD7C8F 6E69E6BC 244D0244 8A531738\
+          \ 11A55E85 48B64682\n  7F386AEE F71DED40 0F86B46D D531672D 0282AEFD 9E202434\
+          \ BDB9E978 1A1DAA9A\n  27683F79 6C75F233 C0983632 45FDF616 8D97CEC5 6D172CFE\
+          \ D592F480 437189DC\n  BEB793A5 D808E859 9A4B99A3 91F95E13 407A4713 4A300874\
+          \ 0CA2EF4F 68A2A884\n  9BAC8778 012D3087 D7DCDB7C 9BD7F802 A9280CB5 E9631486\
+          \ E6055DEB 179A7240\n  4880B606 62F4EA27 08558FB8 76216E5E 4B5A1C26 E53CCBD9\
+          \ 14877160 30DB362C\n  A39C18A3 CF02C929 A0DC0ADB E9DB63D2 46EC1CED 5EF8E6C5\
+          \ B08E1DCC A90144C5\n  6EB9F025 A9F83731 C4A4AAEA 8A914672 36BAC79E\n  \t\
+          quit\n!\nlicense udi pid CSR1000V sn 9RFF96T3C4P\ndiagnostic bootup level\
+          \ minimal\nmemory free low-watermark processor 71464\n!\n!\nspanning-tree\
+          \ extend system-id\n!\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n description\
+          \ ion Internet Simulated Address\n ip address 209.165.200.225 255.255.255.224\n\
+          !\ninterface GigabitEthernet1\n description connection to R1\n ip address\
+          \ 64.100.0.1 255.255.255.252\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\ninterface GigabitEthernet2\n description Connection To R3\n\
+          \ ip address 64.100.1.1 255.255.255.252\n negotiation auto\n no mop enabled\n\
+          \ no mop sysid\n!\ninterface GigabitEthernet3\n no ip address\n shutdown\n\
+          \ negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet4\n\
+          \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
+          \ sysid\n!\nip forward-protocol nd\nno ip http server\nip http secure-server\n\
+          !\nip route 0.0.0.0 0.0.0.0 Loopback0\nip route 10.10.0.0 255.255.252.0\
+          \ 64.100.0.2\nip route 10.10.4.0 255.255.252.0 64.100.1.2\nip route 10.10.16.0\
+          \ 255.255.248.0 64.100.1.2\n!\n!\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n\
+          !\n!\nbanner motd ^C This is R2, Implement GRE over IPsec Site-to-Site VPNs\
+          \ ^C\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\n stopbits\
+          \ 1\nline vty 0 4\n exec-timeout 0 0\n login\n transport input ssh\n!\n\
+          call-home\n ! If contact email address in call-home is configured as sch-smart-licensing@cisco.com\n\
+          \ ! the email address configured in Cisco Smart License Portal will be used\
+          \ as contact email address to send SCH notifications.\n contact-email-addr\
+          \ sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n  active\n  destination\
+          \ transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: R2
+    node_definition: csr1000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: -40
+    y: -160
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet4
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 3364 bytes
+          !
+          ! Last configuration change at 16:42:10 UTC Sun Mar 22 2026
+          !
+          version 15.2
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          no service password-encryption
+          service compress-config
+          !
+          hostname D1
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          !
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          no ip domain-lookup
+          ip cef
+          no ipv6 cef
+          !
+          !
+          !
+          spanning-tree mode pvst
+          spanning-tree extend system-id
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface Loopback2
+           description Loopback to simulate and OSPF network
+           ip address 10.10.2.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface Loopback3
+           description Loopack to simulate an OSPF nework
+           ip address 10.10.3.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface GigabitEthernet0/0
+           description Connection to R1
+           no switchport
+           ip address 10.10.0.2 255.255.255.252
+           negotiation auto
+          !
+          interface GigabitEthernet0/1
+           description Connection to PC1
+           no switchport
+           ip address 10.10.1.1 255.255.255.0
+           negotiation auto
+          !
+          interface GigabitEthernet0/2
+           shutdown
+           negotiation auto
+          !
+          interface GigabitEthernet0/3
+           shutdown
+           negotiation auto
+          !
+          router ospf 123
+           router-id 1.1.1.2
+           auto-cost reference-bandwidth 1000
+           network 10.10.0.0 0.0.3.255 area 0
+          !
+          ip forward-protocol nd
+          !
+          ip http server
+          ip http secure-server
+          !
+          ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          !
+          !
+          !
+          !
+          !
+          !
+          control-plane
+          !
+          banner exec ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner incoming ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner login ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner motd ^C This is D1, Implement GRE over IPsec Site-to-Site VPNs ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           login
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: D1
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: -80
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 4259 bytes
+          !
+          ! Last configuration change at 16:42:09 UTC Sun Mar 22 2026
+          !
+          version 15.2
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          no service password-encryption
+          service compress-config
+          !
+          hostname D3
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          !
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          no ip domain-lookup
+          ip cef
+          no ipv6 cef
+          !
+          !
+          !
+          spanning-tree mode pvst
+          spanning-tree extend system-id
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface Loopback16
+           description Loopback to simulate an OSPF network
+           ip address 10.10.16.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface Loopback17
+           description Loopback to Simulate and OSPF Network
+           ip address 10.10.17.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface Loopback18
+           description Loopback to simulate an OSPf Network
+           ip address 10.10.18.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface Loopback19
+           description Loopback to simulate an OSPF Network
+           ip address 10.10.19.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface Loopback20
+           description Loopback to simulate an OSPF Network
+           ip address 10.10.20.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface Loopback21
+           description Loopback to simulate an OSPF Network
+           ip address 10.10.21.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface Loopback22
+           description Loopback to simulate an OSPF Network
+           ip address 10.10.22.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface Loopback23
+           description Loopback to simulate an OSPF Network
+           ip address 10.10.23.1 255.255.255.0
+           ip ospf network point-to-point
+          !
+          interface GigabitEthernet0/0
+           description Connection to R3
+           no switchport
+           ip address 10.10.4.2 255.255.255.252
+           negotiation auto
+          !
+          interface GigabitEthernet0/1
+           description Connection to PC3
+           no switchport
+           ip address 10.10.5.1 255.255.255.0
+           negotiation auto
+          !
+          interface GigabitEthernet0/2
+           shutdown
+           negotiation auto
+          !
+          interface GigabitEthernet0/3
+           shutdown
+           negotiation auto
+          !
+          router ospf 123
+           router-id 3.3.3.2
+           auto-cost reference-bandwidth 1000
+           network 10.10.4.0 0.0.1.255 area 0
+           network 10.10.16.0 0.0.7.255 area 0
+          !
+          ip forward-protocol nd
+          !
+          ip http server
+          ip http secure-server
+          !
+          ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+          !
+          !
+          !
+          !
+          !
+          !
+          control-plane
+          !
+          banner exec ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner incoming ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner login ^CC
+          IOSv - Cisco Systems Confidential -
+
+          Supplemental End User License Restrictions
+
+          This IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.
+
+          By using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.
+          ^C
+          banner motd ^C This is D3, Implement GRE over IPsec Site-to-Site VPNs ^C
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           login
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: D3
+    node_definition: iosvl2
+    parameters: {}
+    ram: null
+    tags: []
+    x: 0
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: GigabitEthernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: GigabitEthernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: GigabitEthernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: PC1
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: -240
+    y: 0
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: PC3
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 160
+    y: 0
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n2
+    n2: n0
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: R2-GigabitEthernet1<->R1-GigabitEthernet1
+  - id: l1
+    n1: n2
+    n2: n1
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: R2-GigabitEthernet2<->R3-GigabitEthernet1
+  - id: l2
+    n1: n0
+    n2: n3
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: R1-GigabitEthernet2<->D1-GigabitEthernet0/0
+  - id: l3
+    n1: n3
+    n2: n5
+    i1: i2
+    i2: i0
+    conditioning: {}
+    label: D1-GigabitEthernet0/1<->PC1-eth0
+  - id: l4
+    n1: n1
+    n2: n4
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: R3-GigabitEthernet2<->D3-GigabitEthernet0/0
+  - id: l5
+    n1: n4
+    n2: n6
+    i1: i2
+    i2: i0
+    conditioning: {}
+    label: D3-GigabitEthernet0/1<->PC3-eth0
+lab:
+  description: Lab - Implement GRE over IPsec Site-to-Site VPNs
+  notes: ''
+  title: CCNP ENCOR v8 - Module 16 IPsec GRE/IPsec - LAB
+  version: 0.3.0

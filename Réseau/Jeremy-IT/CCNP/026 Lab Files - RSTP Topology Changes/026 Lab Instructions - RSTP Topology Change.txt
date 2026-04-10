@@ -1,0 +1,12 @@
+# Lab Instructions #
+- Use 'debug spanning-tree events' before beginning the lab.
+- The SW2-SW4 link is disabled at the beginning of the lab.
+1) Verify how topology changes flush a switch's MAC address table:
+- Ping PC2 (10.0.0.12) from PC1. Which port does SW3 learn PC2's MAC address on?
+- Enable the SW4-SW2 link and then immediately check SW3's MAC address table. Which MAC addresses were flushed?
+2) Which interfaces does SW4 send TC BPDUs out of when G0/0 enters the Forwarding State?
+- How many TC BPDUs does it send?
+3) Disable and re-enable SW4 G0/2. Is a topology change triggered?
+4) Verify RSTP's UplinkFast/BackboneFast-like functionalities:
+- Disable SW4 G0/0. How long does it take for G0/1 to enter the Forwarding State? Re-enable G0/0 after.
+- Disable SW2 G0/0. How long does it take for SW2 G0/1 to become its new Root Port in the Forwarding State?

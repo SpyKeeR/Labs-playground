@@ -1,0 +1,22 @@
+# IP Info #
+- R1-ISP: 203.0.111.0/24 (ISP = .100, R1 = .1)
+- R2-ISP: 203.0.112.0/24 (ISP = .100, R2 = .2)
+- R2-R3: 192.168.23.0/24 (R2 = .2, R3 = .3)
+
+# Lab Instructions #
+1) Do an extended ping from R1 to R2.
+- Set the DF-bit
+- Do a sweep of sizes from 1496 bytes to 1505 bytes.
+- Which pings succeed? Which fail?
+2) Configure a GRE tunnel between R1 and R2.
+- Subnet: 192.168.12.0/30 (R1 = .1, R2 = .2)
+- What is the IP MTU of the tunnel interface?
+3) Configure the IP MTU of each router's tunnel interface to 1500.
+- Ping R2's tunnel interface from R1, size 1500, no DF-bit.
+- Ping R2's tunnel interface from R1, size 1500, set DF-bit.
+- Verify that R1's pings were fragmented.
+- Return the IP MTU to the default.
+4) Send the following pings and troubleshoot the problem:
+- Ping from R1 to R3, size 1476, set DF-bit
+- Ping from R1 to R3, size 1476, no DF-bit
+- What is preventing these pings from succeeding? Troubleshoot and fix the problem.

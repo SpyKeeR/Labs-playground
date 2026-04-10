@@ -1,0 +1,117 @@
+Building configuration...
+
+Current configuration : 1514 bytes
+!
+! Last configuration change at 02:59:44 UTC Tue Jun 25 2024
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname SW1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+logging console
+!
+no aaa new-model
+!
+!
+vtp mode off
+vlan 1-100
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+spanning-tree mode mst
+spanning-tree extend system-id
+!
+spanning-tree mst configuration
+ name Region12
+ instance 1 vlan 1-50
+ instance 2 vlan 51-100
+!
+spanning-tree mst 0 priority 8192
+spanning-tree mst 1 priority 4096
+!
+no cdp run
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ switchport trunk allowed vlan 1-100
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ switchport nonegotiate
+ negotiation auto
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1-50
+ switchport trunk encapsulation dot1q
+ switchport trunk native vlan 999
+ switchport mode trunk
+ switchport nonegotiate
+ negotiation auto
+!
+interface GigabitEthernet0/2
+ shutdown
+ negotiation auto
+!
+interface GigabitEthernet0/3
+ shutdown
+ negotiation auto
+!
+ip forward-protocol nd
+!
+ip http server
+ip http secure-server
+!
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ transport preferred none
+line aux 0
+line vty 0 4
+ exec-timeout 0 0
+ login
+!
+no banner login
+no banner exec
+no banner incoming
+!
+end
