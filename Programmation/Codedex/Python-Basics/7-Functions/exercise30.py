@@ -5,7 +5,7 @@ Oh no! The NASA engineers forgot to convert imperial data to metric data in one 
 Suppose you're a NASA intern, and your team is calculating the distance a rocket needs to travel. The value calculated is in kilometers, while the next step requires miles. Your manager quickly writes this on the board:
 
 
-miles= kilometers * 0.621371
+miles= kilometers / 1.609
  
 
 Create a new file called rocket.py.
@@ -17,3 +17,7 @@ Print the distance in miles.
 After, call the function and use 10000 as the argument."""
 
 # Write code below 💖
+
+def distance_to_miles(distance):
+  print(distance / 1.609)
+distance_to_miles(10000)
